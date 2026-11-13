@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jury · Titre professionnel Médiateur numérique · Session 2026</title>
+<meta name="description" content="Grille d'entretien jury — Titre professionnel Médiateur numérique (RNCP 40695), niveau 5, session 2026.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f0d27a'/%3E%3Cstop offset='1' stop-color='%23a8862b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='2' y='2' width='60' height='60' rx='16' fill='%230a0a0d' stroke='url(%23g)' stroke-width='3'/%3E%3Cpath d='M32 12 52 32 32 52 12 32Z' fill='none' stroke='url(%23g)' stroke-width='4' stroke-linejoin='round'/%3E%3Ccircle cx='32' cy='32' r='6' fill='url(%23g)'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@500;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+<style>
+:root{
+  --obsidian:#0a0a0d;
+  --obsidian-2:#121217;
+  --obsidian-3:#1a1a21;
+  --line:#2c2a25;
+  --line-2:#3d3a31;
+  --ivory:#f6f1e4;
+  --ivory-dim:#d6cfbd;
+  --muted:#b5ad99;
+  --gold:#d9b54a;
+  --gold-2:#f0d27a;
+  --gold-deep:#a8862b;
+  --ok:#7fd8a6;
+  --ok-bg:#10261b;
+  --mid:#f2c96b;
+  --mid-bg:#2a2210;
+  --ko:#ff9d8f;
+  --ko-bg:#2d1513;
+  --radius:18px;
+  --serif:"Playfair Display", Georgia, "Times New Roman", serif;
+  --sans:"Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  --shadow:0 24px 60px -24px rgba(0,0,0,.75), 0 1px 0 rgba(255,255,255,.03) inset;
+}
+*{box-sizing:border-box}
+html{color-scheme:dark}
+body{
+  margin:0;min-height:100vh;font-family:var(--sans);font-size:17px;line-height:1.6;color:var(--ivory);
+  background:
+    radial-gradient(1200px 600px at 85% -10%, rgba(217,181,74,.10), transparent 60%),
+    radial-gradient(900px 500px at -10% 110%, rgba(217,181,74,.06), transparent 60%),
+    var(--obsidian);
+}
+a{color:var(--gold-2)}
+:focus-visible{outline:3px solid var(--gold-2);outline-offset:3px;border-radius:8px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- Top bar ---------- */
+.topbar{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:18px;padding:14px clamp(16px,3vw,36px);
+  background:rgba(10,10,13,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.brand svg{flex:none}
+.brand-txt{min-width:0}
+.brand-kicker{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.brand-title{font-family:var(--serif);font-size:19px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.spacer{flex:1}
+.chrono{display:flex;align-items:center;gap:8px;padding:6px 8px 6px 14px;border:1px solid var(--line-2);border-radius:999px;background:var(--obsidian-2)}
+.chrono-time{font-family:var(--mono);font-size:16px;font-weight:700;color:var(--gold-2);min-width:62px;text-align:center}
+.icon-btn{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:999px;border:1px solid var(--line-2);background:var(--obsidian-3);color:var(--ivory);cursor:pointer}
+.icon-btn:hover{border-color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:12px 20px;border-radius:12px;border:1px solid var(--line-2);
+  background:var(--obsidian-3);color:var(--ivory);font:700 15px/1.2 var(--sans);cursor:pointer;transition:transform .15s, border-color .15s, background .15s}
+.btn:hover{border-color:var(--gold);transform:translateY(-1px)}
+.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}
+.btn-gold{background:linear-gradient(135deg,var(--gold-2),var(--gold) 55%,var(--gold-deep));color:#16130a;border-color:transparent;box-shadow:0 10px 30px -12px rgba(217,181,74,.6)}
+.btn-gold:hover{border-color:transparent;filter:brightness(1.06)}
+.btn-ghost{background:transparent}
+.btn-sm{padding:8px 14px;font-size:14px;border-radius:10px}
+.badge-count{font-family:var(--mono);font-size:12px;background:var(--gold);color:#16130a;border-radius:999px;padding:1px 8px}
+
+/* ---------- Layout ---------- */
+.wrap{max-width:1320px;margin:0 auto;padding:28px clamp(16px,3vw,36px) 80px}
+.stepper{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px}
+.step{display:flex;align-items:center;gap:10px;padding:8px 16px 8px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted);font-weight:700;font-size:14px;background:transparent;cursor:pointer;font-family:var(--sans)}
+.step span{display:grid;place-items:center;width:28px;height:28px;border-radius:999px;background:var(--obsidian-3);font-family:var(--mono);font-size:13px;color:var(--ivory-dim)}
+.step[aria-current="step"]{color:var(--ivory);border-color:var(--gold)}
+.step[aria-current="step"] span{background:var(--gold);color:#16130a}
+.step:disabled{cursor:not-allowed;opacity:.55}
+.view[hidden]{display:none!important}
+.card{background:linear-gradient(180deg,var(--obsidian-2),#0e0e12);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.2;margin:0}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:26px}
+.hero-intro{padding:clamp(24px,4vw,44px)}
+.hero-intro h1{font-size:clamp(30px,4vw,46px);margin:12px 0 16px}
+.hero-intro h1 em{color:var(--gold-2);font-style:italic}
+.lead{color:var(--ivory-dim);font-size:18px;max-width:60ch}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:26px}
+.fact{border:1px solid var(--line);border-radius:14px;padding:14px 16px;background:rgba(255,255,255,.015)}
+.fact b{display:block;font-family:var(--serif);font-size:26px;color:var(--gold-2)}
+.fact small{color:var(--muted);font-size:14px}
+.scale{margin-top:22px;display:grid;gap:8px}
+.scale-row{display:flex;align-items:center;gap:12px;font-size:15px;color:var(--ivory-dim)}
+.dot{width:12px;height:12px;border-radius:999px;flex:none}
+.form{padding:clamp(22px,3.4vw,36px);display:grid;gap:16px;align-content:start}
+.form h2{font-size:26px}
+.field{display:grid;gap:6px}
+.field label{font-weight:700;font-size:15px}
+.field label .req{color:var(--gold-2)}
+.field input,.field textarea{width:100%;padding:13px 14px;border-radius:12px;border:1px solid var(--line-2);background:#0c0c10;color:var(--ivory);font:16px/1.4 var(--sans)}
+.field input:focus,.field textarea:focus{border-color:var(--gold);outline:none;box-shadow:0 0 0 3px rgba(217,181,74,.22)}
+.field textarea{min-height:92px;resize:vertical}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.hint{font-size:14px;color:var(--muted)}
+.err{color:var(--ko);font-size:14px;min-height:1em}
+
+/* ---------- Entretien ---------- */
+.board{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:24px;align-items:start}
+.qcard{padding:clamp(22px,3.4vw,38px);position:relative;overflow:hidden}
+.qcard::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.qhead{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+.qnum{font-family:var(--serif);font-size:54px;line-height:1;color:var(--gold-2);font-style:italic}
+.qnum small{font-size:20px;color:var(--muted);font-style:normal}
+.tag{font-family:var(--mono);font-size:12px;letter-spacing:.08em;padding:5px 10px;border-radius:999px;border:1px solid var(--line-2);color:var(--ivory-dim);text-transform:uppercase}
+.tag-gold{border-color:var(--gold-deep);color:var(--gold-2)}
+.qcomp{font-size:15px;color:var(--muted);margin:0 0 8px}
+.qtext{font-family:var(--serif);font-size:clamp(22px,2.4vw,29px);font-weight:600;line-height:1.35;margin:4px 0 18px}
+.anchor{display:flex;gap:12px;padding:14px 16px;border-radius:14px;background:rgba(217,181,74,.07);border:1px dashed var(--gold-deep);color:var(--ivory-dim);font-size:15px;margin-bottom:16px}
+.anchor b{color:var(--gold-2)}
+details.relances{border:1px solid var(--line);border-radius:14px;padding:4px 16px;margin-bottom:18px;background:rgba(255,255,255,.015)}
+details.relances summary{cursor:pointer;font-weight:700;padding:10px 0;color:var(--ivory)}
+details.relances ul{margin:0 0 12px;padding-left:20px;color:var(--ivory-dim)}
+.reveal{width:100%;justify-content:space-between;padding:16px 20px;font-size:16px}
+.reveal .kbd{font-family:var(--mono);font-size:12px;border:1px solid rgba(0,0,0,.25);border-radius:6px;padding:1px 7px}
+.answer{margin-top:16px;border-radius:16px;border:1px solid var(--gold-deep);background:linear-gradient(180deg,rgba(217,181,74,.09),rgba(217,181,74,.02));padding:20px 22px;animation:rise .35s ease}
+.answer h3{font-size:19px;color:var(--gold-2);margin-bottom:10px}
+.answer ul{margin:0;padding-left:20px}
+.answer li{margin:6px 0}
+.answer li strong{color:var(--ivory)}
+.criteria{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.crit{border-radius:12px;padding:12px 14px;font-size:14px;line-height:1.45}
+.crit b{display:block;font-size:13px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+.crit.A{background:var(--ok-bg);border:1px solid #275c40;color:#d6f5e4}.crit.A b{color:var(--ok)}
+.crit.ECA{background:var(--mid-bg);border:1px solid #6b5420;color:#f8ecca}.crit.ECA b{color:var(--mid)}
+.crit.NA{background:var(--ko-bg);border:1px solid #6e2f29;color:#fbe0dc}.crit.NA b{color:var(--ko)}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.evalbox{margin-top:24px;padding-top:22px;border-top:1px solid var(--line)}
+.evalbox h3{font-size:20px;margin-bottom:12px}
+.levels{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.lvl{position:relative}
+.lvl input{position:absolute;opacity:0;inset:0;cursor:pointer;margin:0}
+.lvl label{display:flex;flex-direction:column;gap:4px;padding:16px;border-radius:14px;border:2px solid var(--line-2);background:#0c0c10;cursor:pointer;transition:.15s;height:100%}
+.lvl label .t{font-weight:700;font-size:16px;display:flex;align-items:center;gap:8px}
+.lvl label .p{font-family:var(--mono);font-size:13px;color:var(--muted)}
+.lvl label .k{font-family:var(--mono);font-size:11px;color:var(--muted);margin-left:auto;border:1px solid var(--line-2);border-radius:6px;padding:0 6px}
+.lvl input:focus-visible + label{outline:3px solid var(--gold-2);outline-offset:3px}
+.lvl.A input:checked + label{border-color:var(--ok);background:var(--ok-bg)}
+.lvl.ECA input:checked + label{border-color:var(--mid);background:var(--mid-bg)}
+.lvl.NA input:checked + label{border-color:var(--ko);background:var(--ko-bg)}
+.lvl label:hover{border-color:var(--gold-deep)}
+.box{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:6px;border:2px solid var(--muted);flex:none}
+.lvl input:checked + label .box{border-color:currentColor;background:currentColor}
+.lvl.A input:checked + label .t{color:var(--ok)}
+.lvl.ECA input:checked + label .t{color:var(--mid)}
+.lvl.NA input:checked + label .t{color:var(--ko)}
+.lvl input:checked + label .box::after{content:"";width:6px;height:11px;border:solid #0a0a0d;border-width:0 3px 3px 0;transform:rotate(45deg) translate(-1px,-1px)}
+.qnav{display:flex;justify-content:space-between;gap:12px;margin-top:24px;flex-wrap:wrap}
+.side{position:sticky;top:88px;display:grid;gap:18px}
+.panel{padding:22px}
+.panel h3{font-size:18px;margin-bottom:14px}
+.gauge{display:grid;place-items:center;position:relative;margin:4px auto 10px;width:190px;height:190px}
+.gauge svg{transform:rotate(-90deg)}
+.gauge-c{position:absolute;inset:0;display:grid;place-content:center;text-align:center}
+.gauge-c b{font-family:var(--serif);font-size:44px;line-height:1}
+.gauge-c small{font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:6px}
+.verdict-mini{text-align:center;font-weight:700;font-size:15px;padding:8px 12px;border-radius:10px;margin-top:4px}
+.v-ok{background:var(--ok-bg);color:var(--ok);border:1px solid #275c40}
+.v-ko{background:var(--ko-bg);color:var(--ko);border:1px solid #6e2f29}
+.v-wait{background:var(--obsidian-3);color:var(--ivory-dim);border:1px solid var(--line-2)}
+.grid10{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.tile{aspect-ratio:1;border-radius:12px;border:1px solid var(--line-2);background:#0c0c10;color:var(--ivory-dim);font:700 16px var(--mono);cursor:pointer;position:relative}
+.tile[aria-current="true"]{outline:2px solid var(--gold-2);outline-offset:2px;color:var(--ivory)}
+.tile.A{background:var(--ok-bg);border-color:var(--ok);color:var(--ok)}
+.tile.ECA{background:var(--mid-bg);border-color:var(--mid);color:var(--mid)}
+.tile.NA{background:var(--ko-bg);border-color:var(--ko);color:var(--ko)}
+.legend{display:flex;flex-wrap:wrap;gap:10px 14px;margin-top:12px;font-size:13px;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.blocs{display:grid;gap:12px}
+.bloc-row{display:grid;gap:6px}
+.bloc-row .lab{display:flex;justify-content:space-between;font-size:14px;color:var(--ivory-dim)}
+.bloc-row .lab b{font-family:var(--mono);color:var(--ivory)}
+.bar{height:8px;border-radius:99px;background:var(--obsidian-3);overflow:hidden;position:relative}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--gold-deep),var(--gold-2));border-radius:99px;transition:width .4s}
+.thbar{position:relative;height:14px;border-radius:99px;background:var(--obsidian-3);overflow:visible;margin:10px 0 26px}
+.thbar i{display:block;height:100%;border-radius:99px;transition:width .5s}
+.thbar .mark{position:absolute;top:-6px;bottom:-6px;width:2px;background:var(--ivory);left:70%}
+.thbar .mark::after{content:"Seuil 70 %";position:absolute;top:24px;left:50%;transform:translateX(-50%);font-family:var(--mono);font-size:11px;color:var(--ivory-dim);white-space:nowrap}
+
+/* ---------- Bilan ---------- */
+.bilan-head{padding:clamp(22px,3.4vw,40px);display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;position:relative;overflow:hidden}
+.bilan-head::after{content:"";position:absolute;right:-120px;top:-120px;width:360px;height:360px;border-radius:50%;border:1px solid rgba(217,181,74,.18);box-shadow:0 0 0 40px rgba(217,181,74,.03),0 0 0 80px rgba(217,181,74,.02)}
+.bilan-head h1{font-size:clamp(28px,3.6vw,42px);margin:10px 0 6px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 22px;color:var(--ivory-dim);font-size:15px;margin-top:10px}
+.meta b{color:var(--ivory)}
+.verdict{display:inline-flex;align-items:center;gap:10px;margin-top:18px;padding:10px 18px;border-radius:999px;font-weight:700;font-size:16px}
+.bilan-grid{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:24px;margin-top:24px;align-items:start}
+table.res{width:100%;border-collapse:collapse;font-size:15px}
+table.res th{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);text-align:left;padding:12px 14px;border-bottom:1px solid var(--line-2)}
+table.res td{padding:14px;border-bottom:1px solid var(--line);vertical-align:top}
+table.res td.n{font-family:var(--serif);font-size:22px;font-style:italic;color:var(--gold-2);width:48px}
+table.res td.pts{font-family:var(--mono);font-weight:700;text-align:right;white-space:nowrap}
+.pill{display:inline-block;padding:4px 10px;border-radius:999px;font-size:13px;font-weight:700;white-space:nowrap}
+.pill.A{background:var(--ok-bg);color:var(--ok);border:1px solid #275c40}
+.pill.ECA{background:var(--mid-bg);color:var(--mid);border:1px solid #6b5420}
+.pill.NA{background:var(--ko-bg);color:var(--ko);border:1px solid #6e2f29}
+.pill.none{background:var(--obsidian-3);color:var(--muted);border:1px solid var(--line-2)}
+.obs{display:block;margin-top:6px;color:var(--muted);font-style:italic;font-size:14px}
+.actions{display:grid;gap:12px}
+.note{font-size:13px;color:var(--muted);line-height:1.5}
+.warn{border:1px solid #6b5420;background:var(--mid-bg);color:#f8ecca;border-radius:12px;padding:12px 14px;font-size:14px}
+
+/* ---------- Drawer ---------- */
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:40;opacity:0;pointer-events:none;transition:.2s}
+.scrim.open{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(460px,100vw);z-index:41;background:var(--obsidian-2);border-left:1px solid var(--line-2);transform:translateX(100%);transition:transform .25s ease;display:flex;flex-direction:column}
+.drawer.open{transform:none}
+.drawer header{display:flex;align-items:center;gap:12px;padding:20px 22px;border-bottom:1px solid var(--line)}
+.drawer header h2{font-size:22px;flex:1}
+.drawer .list{overflow:auto;padding:16px 22px;display:grid;gap:12px;align-content:start;flex:1}
+.drawer footer{padding:16px 22px;border-top:1px solid var(--line);display:flex;gap:10px;flex-wrap:wrap}
+.hist{border:1px solid var(--line);border-radius:14px;padding:14px 16px;background:#0e0e12}
+.hist-top{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.hist-top b{font-family:var(--serif);font-size:18px}
+.hist-top span{font-family:var(--mono);font-weight:700}
+.hist small{color:var(--muted);display:block;margin:2px 0 10px}
+.hist .row{display:flex;gap:8px;flex-wrap:wrap}
+.empty{color:var(--muted);text-align:center;padding:30px 10px}
+
+.toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);opacity:0;z-index:60;background:var(--ivory);color:#16130a;padding:12px 20px;border-radius:12px;font-weight:700;box-shadow:var(--shadow);transition:.25s;pointer-events:none;max-width:90vw;text-align:center}
+.toast.show{opacity:1;transform:translateX(-50%)}
+footer.site{max-width:1320px;margin:0 auto;padding:0 clamp(16px,3vw,36px) 40px;color:var(--muted);font-size:13px}
+
+@media (max-width:1040px){
+  .hero,.board,.bilan-grid{grid-template-columns:1fr}
+  .side{position:static}
+  .bilan-head{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .facts,.levels,.criteria,.two{grid-template-columns:1fr}
+  .brand-title{font-size:16px}
+  .chrono-time{min-width:52px;font-size:14px}
+  table.res th:nth-child(2),table.res td:nth-child(2){display:none}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+<!-- ===== AJOUT v2 : thème clair/sombre, taille des textes, chronomètre officiel ===== -->
+<script>
+(function(){
+  var d=document.documentElement;
+  try{
+    var t=localStorage.getItem("mn-jury-theme");
+    if(t!=="light"&&t!=="dark") t=(window.matchMedia&&matchMedia("(prefers-color-scheme: light)").matches)?"light":"dark";
+    d.setAttribute("data-theme",t);
+    var z=parseFloat(localStorage.getItem("mn-jury-zoom"));
+    if(z>=0.8&&z<=1.35) d.style.setProperty("--z",z);
+  }catch(e){ d.setAttribute("data-theme","dark"); }
+})();
+</script>
+<style>
+/* ---------- Taille des textes (80 % à 135 %) ---------- */
+body{zoom:var(--z,1)}
+.drawer{width:min(460px, calc(100vw / var(--z,1)))}
+::placeholder{color:var(--muted);opacity:1}
+.tools{display:flex;align-items:center;gap:6px;padding:4px;border:1px solid var(--line-2);border-radius:999px;background:var(--obsidian-2)}
+.tool-btn{min-width:38px;height:34px;padding:0 10px;border-radius:999px;border:1px solid transparent;background:transparent;color:var(--ivory);font:700 15px/1 var(--sans);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:6px}
+.tool-btn:hover{border-color:var(--gold)}
+.tool-btn:disabled{opacity:.4;cursor:not-allowed}
+.tool-btn .lbl{font-size:13px}
+.zoom-read{font-family:var(--mono);font-size:13px;min-width:56px}
+.tool-sep{width:1px;height:22px;background:var(--line-2)}
+/* ---------- Chronomètre officiel ---------- */
+.chrono-sel{max-width:170px;height:34px;border-radius:999px;border:1px solid var(--line-2);background:var(--obsidian-3);color:var(--ivory);font:700 13px var(--sans);padding:0 8px;cursor:pointer}
+.chrono-sel:focus-visible{outline:3px solid var(--gold-2);outline-offset:2px}
+.chrono.is-warn{border-color:var(--mid)}
+.chrono.is-warn .chrono-time{color:var(--mid)}
+.chrono.is-done{border-color:var(--ko);background:var(--ko-bg)}
+.chrono.is-done .chrono-time{color:var(--ko)}
+.chrono-state{font-size:12px;font-weight:700;color:var(--ko);white-space:nowrap}
+.chrono-state:empty{display:none}
+/* ---------- Mise en page selon la largeur effective (zoom) ---------- */
+html.zn .hero, html.zn .board, html.zn .bilan-grid{grid-template-columns:1fr}
+html.zn .side{position:static}
+html.zn .bilan-head{grid-template-columns:1fr}
+html.zn .topbar{flex-wrap:wrap}
+html.zxn .facts, html.zxn .levels, html.zxn .criteria, html.zxn .two{grid-template-columns:1fr}
+html.zxn table.res th:nth-child(2), html.zxn table.res td:nth-child(2){display:none}
+@media (max-width:900px){.topbar{flex-wrap:wrap}}
+
+/* ---------- MODE CLAIR (contrastes WCAG AAA) ---------- */
+html[data-theme="light"]{
+  color-scheme:light;
+  --obsidian:#f7f3e8; --obsidian-2:#ffffff; --obsidian-3:#efe9da;
+  --line:#d9d0ba; --line-2:#8a7d5e;
+  --ivory:#17140e; --ivory-dim:#2f2a20; --muted:#4a4538;
+  --gold:#6b4e00; --gold-2:#5c4300; --gold-deep:#7a5c10;
+  --ok:#155c38; --ok-bg:#e3f4ea; --mid:#5e4400; --mid-bg:#fbf0d2; --ko:#8f1d12; --ko-bg:#fbe3df;
+  --shadow:0 18px 40px -24px rgba(60,45,10,.35), 0 1px 0 rgba(255,255,255,.6) inset;
+}
+html[data-theme="light"] body{background:radial-gradient(1200px 600px at 85% -10%, rgba(201,162,52,.16), transparent 60%),radial-gradient(900px 500px at -10% 110%, rgba(201,162,52,.10), transparent 60%),var(--obsidian)}
+html[data-theme="light"] .topbar{background:rgba(255,253,247,.94)}
+html[data-theme="light"] .card{background:#fff}
+html[data-theme="light"] .field input, html[data-theme="light"] .field textarea,
+html[data-theme="light"] .lvl label, html[data-theme="light"] .tile, html[data-theme="light"] .hist{background:#fffdf8}
+html[data-theme="light"] .field input:focus, html[data-theme="light"] .field textarea:focus{box-shadow:0 0 0 3px rgba(107,78,0,.25)}
+html[data-theme="light"] .btn-gold{background:linear-gradient(135deg,#5c4300,#4a3600);color:#fff;box-shadow:0 10px 26px -14px rgba(74,54,0,.7)}
+html[data-theme="light"] .step[aria-current="step"] span, html[data-theme="light"] .badge-count{background:#5c4300;color:#fff}
+html[data-theme="light"] .toast{background:#17140e;color:#fff}
+html[data-theme="light"] .crit.A, html[data-theme="light"] .crit.ECA, html[data-theme="light"] .crit.NA{color:var(--ivory)}
+html[data-theme="light"] .crit.A{border-color:var(--ok)} html[data-theme="light"] .crit.ECA{border-color:var(--mid)} html[data-theme="light"] .crit.NA{border-color:var(--ko)}
+html[data-theme="light"] .v-ok, html[data-theme="light"] .pill.A{border-color:var(--ok)}
+html[data-theme="light"] .v-ko, html[data-theme="light"] .pill.NA{border-color:var(--ko)}
+html[data-theme="light"] .pill.ECA{border-color:var(--mid)}
+html[data-theme="light"] .warn{border-color:var(--mid);color:var(--ivory)}
+html[data-theme="light"] .lvl input:checked + label .box::after{border-color:#fff}
+html[data-theme="light"] .anchor{background:rgba(107,78,0,.06)}
+html[data-theme="light"] .anchor svg *{stroke:var(--gold)}
+html[data-theme="light"] .brand svg rect{fill:#fff}
+html[data-theme="light"] #g stop:first-child, html[data-theme="light"] #gg stop:first-child{stop-color:#7a5c10}
+html[data-theme="light"] #g stop:last-child, html[data-theme="light"] #gg stop:last-child{stop-color:#4a3600}
+html[data-theme="light"] circle[stroke="#1f1f27"]{stroke:#e6dfcc}
+html[data-theme="light"] circle[stroke="#7fd8a6"]{stroke:#1f7a4c}
+html[data-theme="light"] circle[stroke="#ff9d8f"]{stroke:#b3261e}
+html[data-theme="light"] #bThBar[style*="7fd8a6"]{background:#1f7a4c!important}
+html[data-theme="light"] #bThBar[style*="f0d27a"]{background:linear-gradient(90deg,#7a5c10,#4a3600)!important}
+html[data-theme="light"] .scrim{background:rgba(23,20,14,.45)}
+</style>
+<!-- ===== AJOUT v3 : styles des onglets → questions de l'onglet sélectionné ===== -->
+<style>
+.scope-band{display:flex;align-items:flex-start;gap:10px;margin:0 0 18px;padding:10px 14px;border-radius:12px;border:1px solid var(--gold-deep);background:rgba(217,181,74,.08);color:var(--ivory);font-size:15px;line-height:1.45}
+.scope-band svg{flex:none;margin-top:2px}
+.scope-band b{color:var(--gold-2)}
+html[data-theme="light"] .scope-band{background:rgba(107,78,0,.07)}
+.tile[hidden]{display:none}
+.bloc-row.is-scope .lab span{color:var(--gold-2);font-weight:700}
+#finSideInfo{margin:12px 0 0}
+#finSideInfo:empty{display:none}
+.fin-card{margin-top:24px;padding:clamp(20px,3vw,32px)}
+.fin-card[hidden]{display:none}
+.fin-head{display:flex;flex-wrap:wrap;gap:14px 24px;align-items:flex-end;justify-content:space-between;margin-bottom:16px}
+.fin-head h2{font-size:clamp(22px,2.6vw,30px);margin-top:8px}
+.fin-score{font-family:var(--serif);font-size:34px;font-weight:700;color:var(--gold-2);line-height:1;text-align:right}
+.fin-score small{display:block;margin-top:6px;font-family:var(--mono);font-size:13px;font-weight:500;color:var(--muted)}
+.fin-table{overflow-x:auto;border:1px solid var(--line);border-radius:14px;padding:4px 6px}
+.fin-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+/* Barre d'onglets cliquables dans l'en-tête (toujours visible) */
+.topbar{flex-wrap:wrap;row-gap:10px}
+.scope-tabs{flex-basis:100%;order:99;display:flex;align-items:center;gap:8px;overflow-x:auto;padding:2px 2px 4px}
+.st-title{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);white-space:nowrap;margin-right:4px}
+.scope-tab{display:inline-flex;align-items:center;gap:8px;flex:none;min-height:40px;padding:6px 14px;border-radius:999px;border:2px solid var(--line-2);background:var(--obsidian-3);color:var(--ivory);font:700 15px/1.2 var(--sans);cursor:pointer;transition:border-color .15s, background .15s}
+.scope-tab:hover{border-color:var(--gold)}
+.scope-tab .st-d{font-family:var(--mono);font-size:12px;font-weight:500;color:var(--muted)}
+.scope-tab .st-c{font-family:var(--mono);font-size:12px;border-radius:999px;padding:1px 8px;background:var(--obsidian);color:var(--ivory-dim);border:1px solid var(--line-2)}
+.scope-tab.on{background:linear-gradient(135deg,var(--gold-2),var(--gold) 55%,var(--gold-deep));border-color:transparent;color:#16130a}
+.scope-tab.on .st-d{color:#2a2210}
+.scope-tab.on .st-c{background:rgba(0,0,0,.18);border-color:transparent;color:#16130a}
+html[data-theme="light"] .scope-tab{background:#fffdf8}
+html[data-theme="light"] .scope-tab.on{background:#5c4300;color:#fff}
+html[data-theme="light"] .scope-tab.on .st-d, html[data-theme="light"] .scope-tab.on .st-c{color:#fff}
+html[data-theme="light"] .scope-tab.on .st-c{background:rgba(255,255,255,.18)}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <svg width="38" height="38" viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f0d27a"/><stop offset="1" stop-color="#a8862b"/></linearGradient></defs><rect x="1" y="1" width="38" height="38" rx="11" fill="#121217" stroke="url(#g)"/><path d="M20 8 31 20 20 32 9 20Z" fill="none" stroke="url(#g)" stroke-width="2"/><circle cx="20" cy="20" r="3.4" fill="url(#g)"/></svg>
+    <div class="brand-txt">
+      <div class="brand-kicker">Jury · RNCP 40695 · Niveau 5</div>
+      <div class="brand-title">Médiateur numérique — Session 2026</div>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <div class="chrono" role="group" aria-label="Chronomètre de l'entretien">
+    <label class="sr-only" for="chronoLimit">Durée officielle de l'entretien</label>
+    <select class="chrono-sel" id="chronoLimit" title="Durée officielle : le chronomètre s'arrête automatiquement"></select>
+    <span class="chrono-time" id="chronoTime" aria-live="off">00:00</span>
+    <button class="icon-btn" id="chronoToggle" type="button" aria-label="Démarrer le chronomètre"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path id="chronoIcon" d="M3 1.5v11l9-5.5z" fill="currentColor"/></svg></button>
+    <button class="icon-btn" id="chronoReset" type="button" aria-label="Remettre le chronomètre à zéro"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 2a5 5 0 1 1-4.6 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M1.6 1.8v3.6h3.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <span class="chrono-state" id="chronoState"></span>
+  </div>
+  <div class="tools" role="group" aria-label="Affichage">
+    <button class="tool-btn" id="zoomOut" type="button" aria-label="Diminuer la taille des textes">A<span aria-hidden="true">−</span></button>
+    <button class="tool-btn zoom-read" id="zoomReset" type="button" aria-label="Taille des textes : 100 %. Rétablir 100 %">100 %</button>
+    <button class="tool-btn" id="zoomIn" type="button" aria-label="Agrandir la taille des textes" style="font-size:18px">A<span aria-hidden="true">+</span></button>
+    <span class="tool-sep" aria-hidden="true"></span>
+    <button class="tool-btn" id="themeToggle" type="button" aria-pressed="false" aria-label="Passer en mode clair">
+      <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" id="themeIcon"></svg><span class="lbl" id="themeLbl">Clair</span>
+    </button>
+  </div>
+  <p class="sr-only" id="a11yLive" aria-live="assertive"></p>
+  <button class="btn btn-sm" id="openHistory" type="button">Candidats <span class="badge-count" id="histCount">0</span></button>
+</header>
+
+<main class="wrap">
+  <nav class="stepper" aria-label="Étapes de l'entretien">
+    <button class="step" data-go="candidat" type="button" aria-current="step"><span>1</span>Candidat</button>
+    <button class="step" data-go="entretien" type="button" disabled><span>2</span>Entretien · 10 questions</button>
+    <button class="step" data-go="bilan" type="button" disabled><span>3</span>Bilan nominatif</button>
+  </nav>
+
+  <!-- ===================== 1. CANDIDAT ===================== -->
+  <section class="view" id="view-candidat" aria-labelledby="t-cand">
+    <div class="hero">
+      <div class="card hero-intro">
+        <div class="eyebrow">Grille d'entretien du jury</div>
+        <h1 id="t-cand">Dix questions pour évaluer un futur <em>médiateur numérique</em>.</h1>
+        <p class="lead">Questions génériques, applicables à tout dossier ou toute présentation du candidat, alignées sur les deux certificats de compétences professionnelles du titre&nbsp;: <strong>CCP&nbsp;1</strong> — accompagner les publics vers un usage autonome des outils numériques et services en ligne, et <strong>CCP&nbsp;2</strong> — accompagner les publics les plus éloignés du numérique dans un réseau territorial.</p>
+        <div class="facts">
+          <div class="fact"><b>10</b><small>questions, une par compétence du référentiel</small></div>
+          <div class="fact"><b>100</b><small>points au total, 10 par question</small></div>
+          <div class="fact"><b>70&nbsp;%</b><small>seuil de réussite de la grille</small></div>
+        </div>
+        <div class="scale" aria-label="Barème">
+          <div class="scale-row"><span class="dot" style="background:var(--ok)"></span><strong>Acquis</strong>&nbsp;— 10 points</div>
+          <div class="scale-row"><span class="dot" style="background:var(--mid)"></span><strong>En cours d'acquisition</strong>&nbsp;— 5 points</div>
+          <div class="scale-row"><span class="dot" style="background:var(--ko)"></span><strong>Non acquis</strong>&nbsp;— 0 point</div>
+        </div>
+        <style>
+.kofi-box{margin-top:26px;text-align:center}
+.kofi-link{display:inline-block;text-decoration:none;color:var(--ivory);border-radius:20px;padding:6px;max-width:260px;width:100%}
+.kofi-img{display:block;width:100%;max-width:240px;height:auto;margin:0 auto;border-radius:50%;position:relative;transition:transform .35s ease, box-shadow .35s ease;transform-origin:center}
+.kofi-link:hover .kofi-img,.kofi-link:focus-visible .kofi-img{transform:scale(1.1);z-index:2;box-shadow:0 0 0 3px var(--gold),0 18px 44px -14px rgba(217,181,74,.65)}
+.kofi-cta{display:inline-flex;align-items:center;gap:8px;margin-top:14px;padding:8px 16px;border-radius:999px;border:1px solid var(--gold-deep);color:var(--gold-2);font:700 14px/1.2 var(--sans);transition:border-color .2s, background .2s}
+.kofi-link:hover .kofi-cta,.kofi-link:focus-visible .kofi-cta{border-color:var(--gold);background:rgba(217,181,74,.10)}
+.kofi-note{display:block;margin-top:6px;font-size:12px;color:var(--muted)}
+</style>
+<div class="kofi-box">
+  <a class="kofi-link" href="https://ko-fi.com/ondeaweb" target="_blank" rel="noopener noreferrer" aria-label="Jean-Claude Lugo, formateur DWWM, TSSR et MNUM : ouvrir ma boutique Ko-fi Ondea Web dans un nouvel onglet">
+    <img class="kofi-img" src="jean-claude-tssr-640x640.png" width="640" height="640" alt="Portrait de Jean-Claude Lugo, formateur DWWM, TSSR et MNUM">
+    <span class="kofi-cta">
+      <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8Zm13 1h1.5a2.5 2.5 0 0 1 0 5H17" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M10.5 15s-3-1.8-3-3.6a1.5 1.5 0 0 1 3-.4 1.5 1.5 0 0 1 3 .4c0 1.8-3 3.6-3 3.6Z" fill="currentColor"/></svg>
+      Soutenez votre formateur
+    </span>
+    <span class="kofi-note">S'ouvre dans un nouvel onglet</span>
+  </a>
+</div>
+      </div>
+
+      <form class="card form" id="candForm" novalidate>
+        <h2>Identité du candidat</h2>
+        <div class="two">
+          <div class="field"><label for="prenom">Prénom <span class="req">*</span></label><input id="prenom" autocomplete="off" required></div>
+          <div class="field"><label for="nom">Nom <span class="req">*</span></label><input id="nom" autocomplete="off" required></div>
+        </div>
+        <div class="field">
+          <label for="dt">Date et heure de présentation <span class="req">*</span></label>
+          <input id="dt" type="datetime-local" required>
+          <span class="hint">Pré-remplies avec l'heure actuelle, modifiables.</span>
+        </div>
+        <div class="field"><label for="projet">Projet ou dossier présenté</label><input id="projet" autocomplete="off" placeholder="Ex. : Atelier d'initiation à l'IA pour seniors débutants"></div>
+        <div class="two">
+          <div class="field"><label for="jury">Membre du jury</label><input id="jury" autocomplete="name" placeholder="Nom du jury"></div>
+          <div class="field"><label for="centre">Centre d'examen</label><input id="centre" autocomplete="organization" placeholder="Centre, ville"></div>
+        </div>
+        <p class="err" id="formErr" role="alert"></p>
+        <button class="btn btn-gold" type="submit">Démarrer l'entretien
+          <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M3 9h11M10 4.5 14.5 9 10 13.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <p class="note">Les entretiens restent dans ce navigateur (liste « Candidats »). Le bilan PDF nominatif se télécharge à l'étape 3.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===================== 2. ENTRETIEN ===================== -->
+  <section class="view" id="view-entretien" hidden aria-label="Entretien">
+    <div class="board">
+      <article class="card qcard" id="qcard" aria-live="polite"></article>
+
+      <aside class="side" aria-label="Suivi du score">
+        <div class="card panel">
+          <h3 id="sideName">Score en direct</h3>
+          <div class="gauge" aria-hidden="true">
+            <svg width="190" height="190" viewBox="0 0 190 190">
+              <circle cx="95" cy="95" r="80" fill="none" stroke="#1f1f27" stroke-width="14"/>
+              <circle id="gArc" cx="95" cy="95" r="80" fill="none" stroke="url(#gg)" stroke-width="14" stroke-linecap="round" stroke-dasharray="502.65" stroke-dashoffset="502.65" style="transition:stroke-dashoffset .5s"/>
+              <defs><linearGradient id="gg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f0d27a"/><stop offset="1" stop-color="#a8862b"/></linearGradient></defs>
+            </svg>
+            <div class="gauge-c"><b id="gPct">0 %</b><small id="gPts">0 / 100 pts</small></div>
+          </div>
+          <p class="sr-only" id="scoreSr" aria-live="polite"></p>
+          <div class="verdict-mini v-wait" id="vMini">En attente d'évaluation</div>
+        </div>
+        <div class="card panel">
+          <h3>Questions</h3>
+          <div class="grid10" id="grid10"></div>
+          <div class="legend"><span><i class="dot" style="background:var(--ok)"></i>Acquis</span><span><i class="dot" style="background:var(--mid)"></i>En cours</span><span><i class="dot" style="background:var(--ko)"></i>Non acquis</span></div>
+        </div>
+        <div class="card panel">
+          <h3>Par bloc de compétences</h3>
+          <div class="blocs">
+            <div class="bloc-row"><div class="lab"><span>CCP 1 · Usage autonome</span><b id="b1">0 / 50</b></div><div class="bar"><i id="b1bar" style="width:0"></i></div></div>
+            <div class="bloc-row"><div class="lab"><span>CCP 2 · Publics éloignés &amp; réseau</span><b id="b2">0 / 50</b></div><div class="bar"><i id="b2bar" style="width:0"></i></div></div>
+          </div>
+          <button class="btn btn-gold" id="toBilan" type="button" style="width:100%;margin-top:20px">Voir le bilan</button>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===================== 3. BILAN ===================== -->
+  <section class="view" id="view-bilan" hidden aria-labelledby="t-bilan">
+    <div class="card bilan-head">
+      <div>
+        <div class="eyebrow">Bilan d'entretien nominatif</div>
+        <h1 id="t-bilan">—</h1>
+        <div class="meta" id="bMeta"></div>
+        <div id="bVerdict"></div>
+      </div>
+      <div class="gauge" style="width:210px;height:210px" aria-hidden="true">
+        <svg width="210" height="210" viewBox="0 0 190 190">
+          <circle cx="95" cy="95" r="80" fill="none" stroke="#1f1f27" stroke-width="12"/>
+          <circle id="bArc" cx="95" cy="95" r="80" fill="none" stroke="url(#gg)" stroke-width="12" stroke-linecap="round" stroke-dasharray="502.65" stroke-dashoffset="502.65" style="transition:stroke-dashoffset .8s"/>
+        </svg>
+        <div class="gauge-c"><b id="bPct">0 %</b><small id="bPts">0 / 100 pts</small></div>
+      </div>
+    </div>
+
+    <div class="bilan-grid">
+      <div class="card" style="padding:8px 8px 4px;overflow-x:auto">
+        <table class="res">
+          <caption class="sr-only">Résultats par compétence</caption>
+          <thead><tr><th scope="col">N°</th><th scope="col">Bloc</th><th scope="col">Compétence évaluée</th><th scope="col">Niveau</th><th scope="col" style="text-align:right">Points</th></tr></thead>
+          <tbody id="bRows"></tbody>
+        </table>
+      </div>
+      <div class="side" style="top:88px">
+        <div class="card panel">
+          <h3>Synthèse</h3>
+          <div class="thbar" aria-hidden="true"><i id="bThBar" style="width:0"></i><span class="mark"></span></div>
+          <div class="blocs" id="bBlocs"></div>
+          <div id="bWarn"></div>
+        </div>
+        <div class="card panel">
+          <div class="field">
+            <label for="appreciation">Appréciation générale du jury</label>
+            <textarea id="appreciation" placeholder="Points forts, axes de progrès, posture professionnelle…"></textarea>
+          </div>
+        </div>
+        <div class="card panel actions">
+          <button class="btn btn-gold" id="dlPdf" type="button">
+            <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 2v9m0 0L5.5 7.5M9 11l3.5-3.5M3 13.5V15h12v-1.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Télécharger le bilan PDF</button>
+          <button class="btn" id="backEval" type="button">Modifier les évaluations</button>
+          <button class="btn btn-ghost" id="newCand" type="button">Nouveau candidat</button>
+          <p class="note">Outil d'aide à l'entretien technique. La délivrance du titre relève de la délibération du jury, conformément au référentiel d'évaluation et au procès-verbal officiel de la session.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">Titre professionnel Médiateur numérique — RNCP 40695 (arrêté du 20 mai 2025) · CCP 1 &amp; CCP 2 · Raccourcis pendant l'entretien : <kbd>A</kbd> acquis, <kbd>E</kbd> en cours, <kbd>N</kbd> non acquis, <kbd>R</kbd> réponse attendue, <kbd>←</kbd> <kbd>→</kbd> navigation.</footer>
+
+<!-- Drawer historique -->
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-labelledby="t-hist" aria-hidden="true">
+  <header>
+    <h2 id="t-hist">Candidats de la session</h2>
+    <button class="icon-btn" id="closeHistory" type="button" aria-label="Fermer"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2 2l10 10M12 2 2 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+  </header>
+  <div class="list" id="histList"></div>
+  <footer>
+    <button class="btn btn-sm" id="dlCsv" type="button">Exporter la session (CSV)</button>
+  </footer>
+</aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+"use strict";
+/* ============================================================
+   RÉFÉRENTIEL — 10 questions génériques (1 par compétence)
+   TP Médiateur numérique · RNCP 40695 · CCP 1 et CCP 2
+   ============================================================ */
+const QUESTIONS = [
+{
+  bloc:1, comp:"Accueillir les personnes et présenter les missions de la médiation numérique",
+  q:"Dans le projet que vous avez présenté, comment avez-vous accueilli la personne ou le groupe ? Comment présentez-vous à un public ce qu'est la médiation numérique, et ce que votre structure peut — et ne peut pas — faire pour lui ?",
+  anchor:"Demandez au candidat de s'appuyer sur un moment précis de son dossier : premier contact, accueil d'un atelier, permanence.",
+  relances:["Quelle posture adoptez-vous dans les premières minutes ?","Comment réagissez-vous face à une personne angoissée, pressée ou en colère ?","Que répondez-vous à : « Faites-le à ma place, ce sera plus rapide » ?"],
+  answer:[
+    "<strong>Posture d'accueil</strong> : bienveillance, absence de jugement, écoute active, reformulation, langage simple et sans jargon.",
+    "<strong>Présentation de l'offre</strong> : missions de la structure, types d'accompagnement (individuel, ateliers collectifs, accès libre), horaires, conditions, règles de fonctionnement.",
+    "<strong>Finalité d'autonomie</strong> : « faire avec » et non « faire à la place » ; la personne manipule elle-même.",
+    "<strong>Limites du rôle</strong> : pas de conseil juridique, médical ou bancaire ; confidentialité et respect des données personnelles.",
+    "<strong>Orientation</strong> vers le bon interlocuteur lorsque la demande dépasse le périmètre de la médiation numérique."
+  ],
+  crit:{A:"Posture argumentée, offre clairement présentée, limites du rôle illustrées par un exemple du projet.",ECA:"Posture adaptée mais présentation de l'offre ou des limites du rôle floue.",NA:"Confond aide et « faire à la place », aucun cadre posé."}
+},
+{
+  bloc:1, comp:"Recueillir les besoins et identifier le niveau d'autonomie numérique des publics",
+  q:"Comment avez-vous identifié les besoins et le niveau de compétences numériques de votre public avant de construire votre accompagnement ? Quels outils de diagnostic avez-vous utilisés, ou pourriez-vous utiliser ?",
+  anchor:"Faites citer un public réel du dossier : quel était son niveau de départ, et comment le candidat l'a-t-il mesuré ?",
+  relances:["Quelle différence faites-vous entre la demande exprimée et le besoin réel ?","Comment mener un diagnostic sans mettre la personne en échec ?","Que faites-vous concrètement des résultats du diagnostic ?"],
+  answer:[
+    "<strong>Entretien d'accueil</strong> : questions ouvertes, observation des gestes en situation réelle, sans jugement.",
+    "<strong>Demande ≠ besoin</strong> : partir de la demande exprimée pour identifier ce qui manque à la personne pour être autonome.",
+    "<strong>Freins repérés</strong> : équipement, connexion, coût, langue, lecture-écriture, handicap, peur ou manque de confiance.",
+    "<strong>Outils</strong> : questionnaire de positionnement, grille d'autodiagnostic, tests Pix, outils partagés par le réseau de la médiation numérique ; référence aux domaines du cadre de compétences numériques (information, communication, création de contenus, sécurité, résolution de problèmes).",
+    "<strong>Exploitation</strong> : fixer des objectifs, constituer des groupes de niveau, choisir individuel ou collectif ; fiche de suivi tenue avec le consentement de la personne."
+  ],
+  crit:{A:"Méthode de diagnostic structurée, outils cités et utilisés, lien explicite avec la construction de l'accompagnement.",ECA:"Diagnostic décrit de façon intuitive, peu d'outils ou pas de lien avec la suite.",NA:"Pas de diagnostic : l'accompagnement démarre sans identifier les besoins."}
+},
+{
+  bloc:1, comp:"Concevoir et programmer des accompagnements individuels et collectifs",
+  q:"À partir de l'une de vos fiches de séance, expliquez comment vous avez construit votre séquence : objectifs, déroulé, durée, supports et méthodes. Pourquoi ces choix pour ce public ?",
+  anchor:"Faites ouvrir une fiche de séance ou une diapositive du déroulé présentée par le candidat.",
+  relances:["Formulez un objectif pédagogique opérationnel de votre séance.","Comment prenez-vous en compte des niveaux hétérogènes dans un même groupe ?","Quel est votre plan B si la connexion ou le matériel fait défaut ?","Comment programmez-vous un cycle de plusieurs séances ?"],
+  answer:[
+    "<strong>Objectifs</strong> : un objectif général et des objectifs opérationnels formulés avec un verbe d'action observable (« à la fin de la séance, le participant sera capable de… »).",
+    "<strong>Déroulé structuré</strong> : accueil, rappel des acquis, apport, démonstration, mise en pratique, synthèse, évaluation ; durée calibrée sur le rythme du public, pauses prévues.",
+    "<strong>Méthodes variées</strong> (démonstrative, active, découverte) et <strong>supports accessibles</strong> : pas-à-pas illustré, gros caractères, FALC si nécessaire.",
+    "<strong>Logistique</strong> : salle, matériel, connexion, comptes de test, solution de repli.",
+    "<strong>Programmation</strong> : parcours progressif cohérent avec les besoins diagnostiqués et l'offre de la structure ; communication auprès des publics."
+  ],
+  crit:{A:"Objectifs opérationnels corrects, déroulé cohérent et justifié par le public, plan B anticipé.",ECA:"Déroulé présent mais objectifs vagues ou choix pédagogiques peu justifiés.",NA:"Séance improvisée, pas d'objectif ni de structure identifiable."}
+},
+{
+  bloc:1, comp:"Animer des accompagnements dans différents lieux et contextes",
+  q:"Pendant votre animation, comment avez-vous maintenu l'attention et la participation de tous ? Décrivez une difficulté réelle rencontrée et la manière dont vous l'avez gérée.",
+  anchor:"Ancrez la question dans l'atelier présenté : nombre de participants, lieu, durée, incident survenu.",
+  relances:["Que faites-vous avec un participant avancé qui monopolise la parole, ou un participant qui décroche ?","Qu'est-ce qui change entre un accompagnement individuel et une animation collective ?","Comment adaptez-vous une animation hors de votre structure (médiathèque, résidence seniors, Mission locale…) ?"],
+  answer:[
+    "<strong>Techniques d'animation</strong> : consignes claires, « je montre, puis vous faites », circulation dans la salle, distribution de la parole, valorisation des réussites.",
+    "<strong>Hétérogénéité</strong> : binômes ou entraide entre pairs, exercices à paliers, temps individuel ciblé.",
+    "<strong>Situations difficiles</strong> : recadrage bienveillant, rappel des règles du groupe, adaptation du rythme, reformulation ; panne technique gérée par un plan B.",
+    "<strong>Ne pas prendre la souris ni le smartphone</strong> : guider oralement, laisser manipuler, faire refaire pour vérifier la compréhension.",
+    "<strong>Adaptation au lieu</strong> : itinérance, matériel prêté, contraintes et règles du partenaire d'accueil."
+  ],
+  crit:{A:"Difficulté concrète analysée, réponse adaptée et argumentée, techniques d'animation maîtrisées.",ECA:"Techniques citées de façon générale, analyse de la difficulté superficielle.",NA:"Aucun exemple réel, ou gestion inadaptée (faire à la place, ignorer le groupe)."}
+},
+{
+  bloc:1, comp:"Évaluer les accompagnements et analyser sa pratique professionnelle",
+  q:"Comment avez-vous évalué votre séance : les acquis des participants, leur satisfaction et votre propre pratique ? Que modifieriez-vous si vous deviez la refaire demain ?",
+  anchor:"Demandez le support d'évaluation utilisé dans le projet (questionnaire, grille, exercice final).",
+  relances:["Quelle différence faites-vous entre évaluer la satisfaction et évaluer les acquis ?","Quels indicateurs remontez-vous à votre structure ou aux financeurs ?","Comment entretenez-vous vos compétences face aux évolutions du numérique ?"],
+  answer:[
+    "<strong>Acquis</strong> : mise en situation finale, refaire seul la manipulation, quiz, grille d'observation ; comparaison avec le positionnement initial.",
+    "<strong>Satisfaction</strong> : questionnaire à chaud adapté au public (échelle visuelle, recueil oral), éventuellement à froid.",
+    "<strong>Analyse réflexive</strong> : ce qui a fonctionné ou non, pourquoi, et des axes d'amélioration concrets.",
+    "<strong>Indicateurs et traçabilité</strong> : nombre de participants, assiduité, profils, thématiques, saisis dans l'outil de suivi d'activité de la structure.",
+    "<strong>Veille et formation continue</strong> : ressources du réseau de la médiation numérique, webinaires, échanges de pratiques (compétence transversale « apprendre en continu »)."
+  ],
+  crit:{A:"Distingue acquis / satisfaction / pratique, propose une amélioration précise et réaliste.",ECA:"Évaluation limitée à la satisfaction, amélioration peu précise.",NA:"Aucune évaluation menée ni recul sur sa pratique."}
+},
+{
+  bloc:2, comp:"Développer un réseau local en lien avec l'inclusion numérique",
+  q:"Quels partenaires de votre territoire avez-vous identifiés ou mobilisés dans votre projet ? Comment orientez-vous une personne dont la demande dépasse votre champ d'intervention ?",
+  anchor:"Faites nommer les partenaires réels cités dans le dossier et le rôle exact de chacun.",
+  relances:["Comment avez-vous construit ou alimenté ce réseau ?","Quelle différence entre donner une adresse et réaliser une orientation accompagnée ?","Quels outils permettent de repérer l'offre d'inclusion numérique d'un territoire ?"],
+  answer:[
+    "<strong>Cartographie des acteurs</strong> : France Services, CCAS, CAF, CPAM, France Travail, Mission locale, services sociaux du Département, associations, médiathèques, tiers-lieux, conseillers numériques, réseau territorial d'inclusion numérique.",
+    "<strong>Outils de repérage</strong> : cartographie nationale des lieux d'inclusion numérique, Soliguide, annuaires locaux.",
+    "<strong>Orientation accompagnée</strong> : contacter le partenaire, transmettre l'essentiel avec l'accord de la personne, s'assurer de la prise en charge (fiche de liaison).",
+    "<strong>Limites du rôle</strong> : relais vers le professionnel compétent pour le social, le juridique ou la santé.",
+    "<strong>Faire vivre le réseau</strong> : rencontres, actions coanimées, échanges de pratiques, conventions de partenariat."
+  ],
+  crit:{A:"Partenaires précis et rôles exacts, orientation accompagnée décrite, réseau entretenu.",ECA:"Partenaires cités sans rôle clair ou orientation réduite à « donner l'adresse ».",NA:"Méconnaissance du réseau local, aucune orientation possible."}
+},
+{
+  bloc:2, comp:"Accompagner aux usages numériques sur les plateformes administratives",
+  q:"Une personne vous demande de l'aider à réaliser une démarche en ligne (CAF, impôts, ANTS, France Travail, Ameli…). Comment l'accompagnez-vous concrètement, et quelles règles respectez-vous concernant ses identifiants et ses données ?",
+  anchor:"Si le dossier contient une démarche administrative accompagnée, partez de celle-ci et faites détailler chaque étape.",
+  relances:["Que faites-vous si elle vous demande de garder son mot de passe ?","Qu'est-ce que FranceConnect ?","Dans quel cadre un professionnel peut-il réaliser une démarche « pour le compte de » l'usager ?","Comment réagissez-vous face à une démarche que vous ne connaissez pas ?"],
+  answer:[
+    "<strong>Préparer</strong> : clarifier la démarche, vérifier les pièces nécessaires, passer par le site officiel (méfiance envers les sites payants imitant l'administration).",
+    "<strong>Accompagner pas à pas</strong> en laissant la personne saisir elle-même ; expliquer chaque étape ; vérifier et conserver l'accusé de réception.",
+    "<strong>Identifiants</strong> : jamais notés, conservés ou mémorisés sur le poste ; navigation privée, déconnexion, suppression des fichiers téléchargés.",
+    "<strong>FranceConnect</strong> : connexion aux services publics avec un compte existant (impots.gouv, Ameli, l'Identité Numérique La Poste, France Identité…).",
+    "<strong>« Faire pour le compte de »</strong> : uniquement dans un cadre sécurisé, Aidants Connect (structure et aidant habilités, mandat de l'usager) ; hors de ce cadre, la responsabilité du professionnel est engagée.",
+    "<strong>RGPD et limites</strong> : minimisation des données, consentement, confidentialité ; pas de conseil sur le fond du dossier, orientation vers France Services ou un travailleur social."
+  ],
+  crit:{A:"Démarche pas à pas, règles de confidentialité précises, cadre Aidants Connect connu.",ECA:"Accompagnement correct mais règles de sécurité ou cadre légal approximatifs.",NA:"Fait la démarche à la place de l'usager ou conserve ses identifiants."}
+},
+{
+  bloc:2, comp:"Aller vers les personnes les plus éloignées du numérique du territoire",
+  q:"Qui sont, selon vous, les publics les plus éloignés du numérique sur votre territoire, et comment allez-vous à leur rencontre lorsqu'ils ne viennent pas d'eux-mêmes ?",
+  anchor:"Demandez une action d'« aller-vers » vécue ou observée pendant le stage, et le rôle tenu par le candidat.",
+  relances:["Quels freins empêchent ces personnes de venir dans une structure ?","Donnez un exemple d'action menée hors les murs.","Pourquoi s'appuyer sur les professionnels du social et du médico-social ?"],
+  answer:[
+    "<strong>Publics</strong> : personnes âgées isolées, personnes en précarité, personnes allophones, en situation d'illettrisme ou d'illectronisme, en situation de handicap, habitants de zones rurales ou de quartiers prioritaires, jeunes peu à l'aise avec l'administratif.",
+    "<strong>Freins</strong> : équipement, coût de la connexion, mobilité, langue, peur ou honte, méconnaissance de l'offre.",
+    "<strong>Actions d'« aller-vers »</strong> : permanences dans les lieux de vie (CCAS, Mission locale, épicerie solidaire, résidence seniors, marché), dispositifs itinérants, événements de quartier.",
+    "<strong>Prescripteurs</strong> : s'appuyer sur les professionnels du social et du médico-social qui connaissent et repèrent ces publics.",
+    "<strong>Communication adaptée</strong> : supports simples et visuels, bouche-à-oreille, traduction ; données de territoire (Insee) pour objectiver les besoins."
+  ],
+  crit:{A:"Publics et freins précis pour le territoire, action d'aller-vers concrète, rôle des prescripteurs compris.",ECA:"Publics cités de façon générale, action d'aller-vers peu développée.",NA:"Attend que le public vienne, aucune stratégie d'aller-vers."}
+},
+{
+  bloc:2, comp:"Sécuriser les pratiques numériques des publics",
+  q:"Quels sont les principaux risques numériques auxquels votre public est exposé, et comment l'aidez-vous à s'en protéger ? Que faites-vous si une personne vous dit avoir été victime d'une arnaque en ligne ?",
+  anchor:"Reliez la question aux usages du projet présenté (smartphone, démarches en ligne, messagerie, intelligence artificielle…).",
+  relances:["Comment reconnaître un message d'hameçonnage ?","Qu'est-ce qu'un mot de passe robuste ? Et la double authentification ?","Quelles précautions avec les outils d'intelligence artificielle générative ?"],
+  answer:[
+    "<strong>Risques</strong> : hameçonnage (courriel, SMS, appel), faux sites administratifs, arnaque au faux conseiller bancaire, piratage de compte, usurpation d'identité, rançongiciel, cyberharcèlement, désinformation, contenus truqués par IA.",
+    "<strong>Bonnes pratiques</strong> : mots de passe robustes et uniques, gestionnaire de mots de passe, double authentification, mises à jour, sauvegardes, vérification de l'adresse du site et de l'expéditeur, ne jamais communiquer un code reçu par SMS, paramètres de confidentialité.",
+    "<strong>IA générative</strong> : vérifier les réponses auprès de sources fiables, ne pas y confier de données personnelles ou sensibles, garder son esprit critique.",
+    "<strong>En cas d'incident</strong> : rassurer sans culpabiliser, faire opposition bancaire, changer les mots de passe, conserver les preuves, porter plainte ; ressources : 17Cyber / cybermalveillance.gouv.fr, Perceval (fraude à la carte bancaire), 33700 (SMS et appels frauduleux), Pharos (contenus illicites), 3018 (cyberharcèlement).",
+    "<strong>Prévention</strong> : ateliers de sensibilisation, supports simples, rappel du cadre RGPD."
+  ],
+  crit:{A:"Risques et parades précis, conduite à tenir en cas d'incident claire avec les bons dispositifs.",ECA:"Bonnes pratiques citées, conduite à tenir ou dispositifs de signalement incomplets.",NA:"Méconnaissance des risques courants ou conseils erronés."}
+},
+{
+  bloc:2, comp:"Accompagner les usages numériques des publics spécifiques",
+  q:"Comment adaptez-vous votre accompagnement et vos supports à un public spécifique — par exemple une personne en situation de handicap, une personne âgée, une personne allophone ou un jeune ? Avec quels professionnels pouvez-vous coanimer ?",
+  anchor:"Partez du public spécifique du dossier (seniors débutants, signataires du CIR, jeunes en insertion…).",
+  relances:["Qu'est-ce que le FALC (Facile à lire et à comprendre) ?","Quelles fonctions d'accessibilité des smartphones et ordinateurs connaissez-vous ?","Comment vérifiez-vous qu'un support est accessible ?"],
+  answer:[
+    "<strong>Analyse préalable</strong> des besoins spécifiques, avec la personne et les professionnels qui l'accompagnent (éducateur, ergothérapeute, formateur FLE, établissement médico-social, association spécialisée).",
+    "<strong>Coanimation</strong> : préparation commune, répartition des rôles, bilan partagé après l'action.",
+    "<strong>Adaptations</strong> : rythme et durée, répétition, consignes orales et visuelles, FALC, contrastes et grande police, pictogrammes, outils de traduction, supports imprimés.",
+    "<strong>Fonctions d'accessibilité</strong> : zoom et loupe, taille du texte, lecteurs d'écran (VoiceOver, TalkBack, NVDA), dictée et commande vocale, sous-titres, contraste élevé.",
+    "<strong>Cadre et posture</strong> : accessibilité numérique (RGAA), loi de 2005 sur le handicap ; ne pas infantiliser, partir des capacités de la personne."
+  ],
+  crit:{A:"Adaptations concrètes et justifiées, coanimation décrite, fonctions d'accessibilité connues.",ECA:"Adaptations générales, coanimation ou accessibilité peu maîtrisées.",NA:"Aucune adaptation : même accompagnement pour tous."}
+}
+];
+const LEVELS = {
+  A:{label:"Acquis", short:"Acquis", pts:10, key:"a"},
+  ECA:{label:"En cours d'acquisition", short:"En cours", pts:5, key:"e"},
+  NA:{label:"Non acquis", short:"Non acquis", pts:0, key:"n"}
+};
+const THRESHOLD = 70;
+const STORE_KEY = "mn-jury-2026-history";
+const DRAFT_KEY = "mn-jury-2026-draft";
+
+/* ---------- Utils ---------- */
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const pad = n => String(n).padStart(2,"0");
+function nowLocal(){ const d=new Date(); return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}`; }
+function fmtDate(dt){
+  if(!dt) return "—";
+  const d = new Date(dt); if(isNaN(d)) return dt;
+  const day = d.toLocaleDateString("fr-FR",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
+  return `${day} à ${d.getHours()} h ${pad(d.getMinutes())}`;
+}
+function store(key, val){ try{ if(val===undefined) return JSON.parse(localStorage.getItem(key)||"null"); localStorage.setItem(key, JSON.stringify(val)); }catch(e){ return null; } }
+function toast(msg){ const t=$("#toast"); t.textContent=msg; t.classList.add("show"); clearTimeout(toast._t); toast._t=setTimeout(()=>t.classList.remove("show"),3200); }
+function slug(s){ return String(s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[^A-Za-z0-9]+/g,"-").replace(/^-|-$/g,""); }
+
+/* ---------- State ---------- */
+let state = freshState();
+function freshState(){ return { id: "c"+Date.now().toString(36), cand:{prenom:"",nom:"",dt:nowLocal(),projet:"",jury:"",centre:""}, evals:Array(10).fill(null), notes:Array(10).fill(""), appreciation:"", current:0, revealed:Array(10).fill(false), chrono:0 }; }
+let history = store(STORE_KEY) || [];
+function saveDraft(){ store(DRAFT_KEY, {...state, revealed:undefined}); }
+function score(s=state){
+  let pts=0,b1=0,b2=0,cnt={A:0,ECA:0,NA:0,none:0};
+  s.evals.forEach((e,i)=>{ if(!e){cnt.none++;return;} cnt[e]++; const p=LEVELS[e].pts; pts+=p; if(QUESTIONS[i].bloc===1) b1+=p; else b2+=p; });
+  return {pts, pct:Math.round(pts), b1, b2, cnt, done:10-cnt.none, pass:pts>=THRESHOLD};
+}
+
+/* ---------- Navigation ---------- */
+function go(view){
+  $$(".view").forEach(v=>v.hidden = v.id!=="view-"+view);
+  $$(".step").forEach(b=>{ if(b.dataset.go===view) b.setAttribute("aria-current","step"); else b.removeAttribute("aria-current"); });
+  const started = !!(state.cand.prenom && state.cand.nom);
+  $$(".step")[1].disabled = !started; $$(".step")[2].disabled = !started;
+  if(view==="entretien") renderQuestion();
+  if(view==="bilan") renderBilan();
+  window.scrollTo({top:0,behavior:"smooth"});
+  state.view = view; saveDraft();
+}
+$$(".step").forEach(b=>b.addEventListener("click",()=>{ if(!b.disabled) go(b.dataset.go); }));
+
+/* ---------- Form ---------- */
+function fillForm(){ const c=state.cand; ["prenom","nom","dt","projet","jury","centre"].forEach(k=>$("#"+k).value=c[k]||""); }
+$("#candForm").addEventListener("submit", e=>{
+  e.preventDefault();
+  const c = {}; ["prenom","nom","dt","projet","jury","centre"].forEach(k=>c[k]=$("#"+k).value.trim());
+  const miss = [!c.prenom&&"prénom", !c.nom&&"nom", !c.dt&&"date et heure"].filter(Boolean);
+  if(miss.length){ $("#formErr").textContent = "Merci de renseigner : "+miss.join(", ")+"."; (!c.prenom?$("#prenom"):!c.nom?$("#nom"):$("#dt")).focus(); return; }
+  $("#formErr").textContent="";
+  state.cand = c;
+  try{ localStorage.setItem("mn-jury-2026-last", JSON.stringify({jury:c.jury, centre:c.centre})); }catch(_){}
+  if(!chrono.running && chrono.elapsed===0) chrono.toggle();
+  go("entretien");
+});
+
+/* ---------- Question rendering ---------- */
+function renderQuestion(){
+  const i = state.current, Q = QUESTIONS[i], ev = state.evals[i], rev = state.revealed[i];
+  $("#sideName").textContent = `${state.cand.prenom} ${state.cand.nom.toUpperCase()}`;
+  $("#qcard").innerHTML = `
+    <div class="qhead">
+      <div class="qnum">${pad(i+1)}<small> / 10</small></div>
+      <span class="tag tag-gold">CCP ${Q.bloc}</span>
+      <span class="tag">${Q.bloc===1?"Usage autonome":"Publics éloignés · réseau"}</span>
+    </div>
+    <p class="qcomp">Compétence évaluée : <strong>${esc(Q.comp)}</strong></p>
+    <h2 class="qtext">« ${esc(Q.q)} »</h2>
+    <div class="anchor"><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true" style="flex:none;margin-top:2px"><circle cx="11" cy="11" r="9" fill="none" stroke="#d9b54a" stroke-width="1.6"/><path d="M11 6.5v5.5M11 15v.2" stroke="#f0d27a" stroke-width="2" stroke-linecap="round"/></svg><span><b>Ancrage projet</b> — ${esc(Q.anchor)}</span></div>
+    <details class="relances"><summary>Questions de relance (${Q.relances.length})</summary><ul>${Q.relances.map(r=>`<li>${esc(r)}</li>`).join("")}</ul></details>
+    <button class="btn ${rev?"":"btn-gold"} reveal" id="revealBtn" type="button" aria-expanded="${rev}" aria-controls="answerBox">
+      <span>${rev?"Masquer la réponse attendue":"Afficher la réponse attendue"}</span><span class="kbd">R</span></button>
+    <div id="answerBox" ${rev?"":"hidden"}>
+      <div class="answer">
+        <h3>Éléments de réponse attendus</h3>
+        <ul>${Q.answer.map(a=>`<li>${a}</li>`).join("")}</ul>
+        <div class="criteria">
+          <div class="crit A"><b>Acquis</b>${esc(Q.crit.A)}</div>
+          <div class="crit ECA"><b>En cours</b>${esc(Q.crit.ECA)}</div>
+          <div class="crit NA"><b>Non acquis</b>${esc(Q.crit.NA)}</div>
+        </div>
+      </div>
+    </div>
+    <fieldset class="evalbox" style="border:0;margin:24px 0 0;padding:22px 0 0;border-top:1px solid var(--line)">
+      <legend class="sr-only">Évaluation de la réponse du candidat</legend>
+      <h3 aria-hidden="true">Évaluation de la réponse</h3>
+      <div class="levels">
+        ${Object.entries(LEVELS).map(([k,L])=>`
+          <div class="lvl ${k}">
+            <input type="radio" name="lvl" id="lvl-${k}" value="${k}" ${ev===k?"checked":""}>
+            <label for="lvl-${k}"><span class="t"><span class="box"></span>${L.label}<span class="k">${L.key.toUpperCase()}</span></span><span class="p">+ ${L.pts} point${L.pts>1?"s":""}</span></label>
+          </div>`).join("")}
+      </div>
+      <div class="field" style="margin-top:16px">
+        <label for="note">Observations du jury <span class="hint">(facultatif, reprises dans le bilan)</span></label>
+        <textarea id="note" placeholder="Éléments cités, oublis, qualité de l'argumentation…">${esc(state.notes[i])}</textarea>
+      </div>
+    </fieldset>
+    <div class="qnav">
+      <button class="btn" id="prevQ" type="button" ${i===0?"disabled":""}>← Précédente</button>
+      ${i<9?`<button class="btn btn-gold" id="nextQ" type="button">Question suivante →</button>`:`<button class="btn btn-gold" id="endQ" type="button">Terminer et voir le bilan</button>`}
+    </div>`;
+  $("#revealBtn").addEventListener("click", toggleReveal);
+  $$('input[name="lvl"]').forEach(r=>r.addEventListener("change",()=>setEval(r.value)));
+  $("#note").addEventListener("input", e=>{ state.notes[i]=e.target.value; saveDraft(); });
+  $("#prevQ").addEventListener("click",()=>move(-1));
+  const nx=$("#nextQ"); if(nx) nx.addEventListener("click",()=>move(1));
+  const en=$("#endQ"); if(en) en.addEventListener("click",()=>go("bilan"));
+  renderSide();
+}
+function toggleReveal(){ const i=state.current; state.revealed[i]=!state.revealed[i]; renderQuestion(); $("#revealBtn").focus(); }
+function setEval(k){ state.evals[state.current]=k; saveDraft(); renderSide(); const L=LEVELS[k]; $("#scoreSr").textContent=`Question ${state.current+1} : ${L.label}. Score ${score().pts} sur 100.`; }
+function move(d){ const n=state.current+d; if(n<0||n>9) return; state.current=n; renderQuestion(); }
+function renderSide(){
+  const s = score();
+  $("#gArc").style.strokeDashoffset = 502.65*(1-s.pts/100);
+  $("#gArc").setAttribute("stroke", s.done ? (s.pass?"#7fd8a6":"url(#gg)") : "url(#gg)");
+  $("#gPct").textContent = s.pts+" %"; $("#gPts").textContent = `${s.pts} / 100 pts · ${s.done}/10 évaluées`;
+  const v=$("#vMini");
+  if(!s.done){ v.className="verdict-mini v-wait"; v.textContent="En attente d'évaluation"; }
+  else if(s.pass){ v.className="verdict-mini v-ok"; v.textContent= s.done<10?"Seuil de 70 % déjà atteint":"Seuil de 70 % atteint"; }
+  else { const max = s.pts + (10-s.done)*10; v.className="verdict-mini "+(max>=THRESHOLD?"v-wait":"v-ko"); v.textContent = max>=THRESHOLD ? `Encore ${THRESHOLD-s.pts} pts pour le seuil` : "Seuil de 70 % non atteignable"; }
+  $("#b1").textContent=`${s.b1} / 50`; $("#b2").textContent=`${s.b2} / 50`;
+  $("#b1bar").style.width=(s.b1*2)+"%"; $("#b2bar").style.width=(s.b2*2)+"%";
+  $("#grid10").innerHTML = QUESTIONS.map((Q,i)=>{ const e=state.evals[i]; return `<button type="button" class="tile ${e||""}" data-i="${i}" ${i===state.current?'aria-current="true"':""} aria-label="Question ${i+1}, ${e?LEVELS[e].label:"non évaluée"}">${i+1}</button>`; }).join("");
+  $$("#grid10 .tile").forEach(t=>t.addEventListener("click",()=>{ state.current=+t.dataset.i; renderQuestion(); }));
+}
+$("#toBilan").addEventListener("click",()=>go("bilan"));
+
+/* ---------- Keyboard ---------- */
+document.addEventListener("keydown", e=>{
+  if($("#view-entretien").hidden || e.ctrlKey || e.metaKey || e.altKey) return;
+  const tag=(e.target.tagName||"").toLowerCase(); if(tag==="textarea"||tag==="input"&&e.target.type!=="radio") return;
+  const k=e.key.toLowerCase();
+  if(k==="a"){ setEvalUI("A"); } else if(k==="e"){ setEvalUI("ECA"); } else if(k==="n"){ setEvalUI("NA"); }
+  else if(k==="r"){ toggleReveal(); }
+  else if(e.key==="ArrowRight" && tag!=="input"){ move(1); } else if(e.key==="ArrowLeft" && tag!=="input"){ move(-1); }
+});
+function setEvalUI(k){ const r=$("#lvl-"+k); if(r){ r.checked=true; setEval(k); } }
+
+/* ---------- Bilan ---------- */
+function renderBilan(){
+  const s = score(), c = state.cand;
+  $("#t-bilan").textContent = `${c.prenom} ${c.nom.toUpperCase()}`;
+  $("#bMeta").innerHTML = `<span>Présentation : <b>${esc(fmtDate(c.dt))}</b></span>${c.projet?`<span>Projet : <b>${esc(c.projet)}</b></span>`:""}${c.jury?`<span>Jury : <b>${esc(c.jury)}</b></span>`:""}${c.centre?`<span>Centre : <b>${esc(c.centre)}</b></span>`:""}`;
+  $("#bVerdict").innerHTML = s.pass
+    ? `<span class="verdict v-ok">✓ Seuil de réussite atteint — ${s.pts} % (≥ ${THRESHOLD} %)</span>`
+    : `<span class="verdict v-ko">✕ Seuil de réussite non atteint — ${s.pts} % (< ${THRESHOLD} %)</span>`;
+  setTimeout(()=>{ $("#bArc").style.strokeDashoffset = 502.65*(1-s.pts/100); },60);
+  $("#bArc").setAttribute("stroke", s.pass?"#7fd8a6":"#ff9d8f");
+  $("#bPct").textContent = s.pts+" %"; $("#bPts").textContent = `${s.pts} / 100 pts`;
+  $("#bRows").innerHTML = QUESTIONS.map((Q,i)=>{ const e=state.evals[i]; return `<tr>
+    <td class="n">${i+1}</td><td><span class="tag">CCP ${Q.bloc}</span></td>
+    <td>${esc(Q.comp)}${state.notes[i]?`<span class="obs">« ${esc(state.notes[i])} »</span>`:""}</td>
+    <td>${e?`<span class="pill ${e}">${LEVELS[e].short}</span>`:`<span class="pill none">Non évaluée</span>`}</td>
+    <td class="pts">${e?LEVELS[e].pts:0} / 10</td></tr>`; }).join("");
+  const bar=$("#bThBar"); bar.style.width=s.pts+"%"; bar.style.background = s.pass?"linear-gradient(90deg,#2f8f5f,#7fd8a6)":"linear-gradient(90deg,#a8862b,#f0d27a)";
+  $("#bBlocs").innerHTML = `
+    <div class="bloc-row"><div class="lab"><span>CCP 1 · Usage autonome</span><b>${s.b1} / 50</b></div><div class="bar"><i style="width:${s.b1*2}%"></i></div></div>
+    <div class="bloc-row"><div class="lab"><span>CCP 2 · Publics éloignés &amp; réseau</span><b>${s.b2} / 50</b></div><div class="bar"><i style="width:${s.b2*2}%"></i></div></div>
+    <div class="legend" style="margin-top:4px"><span><i class="dot" style="background:var(--ok)"></i>${s.cnt.A} acquis</span><span><i class="dot" style="background:var(--mid)"></i>${s.cnt.ECA} en cours</span><span><i class="dot" style="background:var(--ko)"></i>${s.cnt.NA} non acquis</span></div>`;
+  $("#bWarn").innerHTML = s.cnt.none ? `<p class="warn" style="margin:16px 0 0">${s.cnt.none} question${s.cnt.none>1?"s":""} non évaluée${s.cnt.none>1?"s":""} (comptée${s.cnt.none>1?"s":""} 0 point).</p>` : "";
+  $("#appreciation").value = state.appreciation || "";
+}
+$("#appreciation").addEventListener("input", e=>{ state.appreciation=e.target.value; saveDraft(); });
+$("#backEval").addEventListener("click",()=>{ const f=state.evals.findIndex(e=>!e); state.current = f>=0?f:0; go("entretien"); });
+$("#newCand").addEventListener("click", ()=>{
+  const b=$("#newCand");
+  if(!b.dataset.confirm){ b.dataset.confirm="1"; b.textContent="Confirmer : nouveau candidat"; setTimeout(()=>{ delete b.dataset.confirm; b.textContent="Nouveau candidat"; },3500); return; }
+  delete b.dataset.confirm; b.textContent="Nouveau candidat";
+  archive(); newCandidate();
+});
+function newCandidate(){
+  state = freshState();
+  const last = (()=>{ try{ return JSON.parse(localStorage.getItem("mn-jury-2026-last")||"{}"); }catch(_){ return {}; } })();
+  state.cand.jury = last.jury||""; state.cand.centre = last.centre||"";
+  fillForm(); chrono.reset(); saveDraft(); go("candidat"); $("#prenom").focus();
+}
+function archive(){
+  if(!state.cand.prenom) return;
+  const s=score(); const rec = {id:state.id, cand:{...state.cand}, evals:[...state.evals], notes:[...state.notes], appreciation:state.appreciation, pts:s.pts, duree:chrono.value, savedAt:new Date().toISOString()};
+  const idx = history.findIndex(h=>h.id===rec.id); if(idx>=0) history[idx]=rec; else history.unshift(rec);
+  store(STORE_KEY, history); renderHistory();
+}
+
+/* ---------- Downloads (artifact capability, sinon lien direct) ---------- */
+async function offerFile(filename, data){
+  let ns = null;
+  try{ if(window.claude && typeof window.claude.use==="function") ns = await window.claude.use("downloads"); }catch(_){ ns=null; }
+  if(ns){
+    try{ await ns.save({filename, data}); toast("Fichier enregistré : "+filename); return true; }
+    catch(err){ const c=err&&err.code; toast(c==="declined"?"Téléchargement annulé.":c==="rate_limited"?"Une demande est déjà ouverte, réessayez dans un instant.":"Téléchargement indisponible dans cette vue."); return false; }
+  }
+  try{
+    const blob = data instanceof Blob ? data : new Blob([data],{type:"application/octet-stream"});
+    const url = URL.createObjectURL(blob); const a=document.createElement("a"); a.href=url; a.download=filename; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(()=>URL.revokeObjectURL(url), 4000); toast("Fichier généré : "+filename); return true;
+  }catch(_){ toast("Le téléchargement n'est pas disponible dans ce navigateur."); return false; }
+}
+
+/* ---------- PDF premium ---------- */
+function pdfSafe(s){
+  return String(s ?? "")
+    .replace(/[‘’ʼ]/g,"'").replace(/[“”]/g,'"').replace(/…/g,"...")
+    .replace(/[–—]/g,"-").replace(/œ/g,"oe").replace(/Œ/g,"OE").replace(/≥/g,">=").replace(/≤/g,"<=")
+    .replace(/[   ]/g," ").replace(/[✓]/g,"").replace(/[^\x00-\xFF]/g,"");
+}
+function buildPdf(rec){
+  const { jsPDF } = window.jspdf;
+  const doc = new jsPDF({unit:"mm", format:"a4"});
+  const W=210, H=297, M=16;
+  const OBS=[14,14,18], GOLD=[201,162,52], GOLD2=[232,203,120], IVORY=[248,244,234], INK=[28,27,24], GREY=[104,100,90], LINE=[226,219,200];
+  const COL={A:[31,125,78], ECA:[176,124,10], NA:[184,58,44], none:[140,136,126]};
+  const BG ={A:[226,244,234], ECA:[251,240,210], NA:[249,226,222], none:[236,234,228]};
+  const c = rec.cand; const s = score(rec);
+  const T = t => pdfSafe(t);
+  const genAt = new Date();
+
+  function header(first){
+    doc.setFillColor(...OBS); doc.rect(0,0,W, first?52:22,"F");
+    doc.setDrawColor(...GOLD); doc.setLineWidth(0.6); doc.line(M, first?52:22, W-M, first?52:22);
+    // emblème
+    const ex=W-M-10, ey= first?16:11;
+    doc.setDrawColor(...GOLD); doc.setLineWidth(0.5);
+    doc.lines([[6,6],[-6,6],[-6,-6],[6,-6]], ex, ey-6, [1,1], "S", true);
+    doc.setFillColor(...GOLD); doc.circle(ex, ey, 1.3, "F");
+    if(first){
+      doc.setFont("helvetica","bold"); doc.setFontSize(8); doc.setTextColor(...GOLD);
+      doc.setCharSpace(1.2); doc.text("BILAN D'ENTRETIEN DU JURY  ·  SESSION 2026", M, 15); doc.setCharSpace(0);
+      doc.setFont("times","bold"); doc.setFontSize(22); doc.setTextColor(...IVORY);
+      doc.text("Titre professionnel Médiateur numérique", M, 28);
+      doc.setFont("helvetica","normal"); doc.setFontSize(9.5); doc.setTextColor(214,207,189);
+      doc.text(T("RNCP 40695  ·  Niveau 5  ·  CCP 1 & CCP 2  ·  Entretien technique - 10 questions génériques"), M, 36);
+      doc.setTextColor(...GOLD2); doc.text(T("Barème : Acquis 10 pts  ·  En cours d'acquisition 5 pts  ·  Non acquis 0 pt  ·  Seuil de réussite 70 %"), M, 43);
+    } else {
+      doc.setFont("times","bold"); doc.setFontSize(13); doc.setTextColor(...IVORY);
+      doc.text(T(`Bilan - ${c.prenom} ${c.nom.toUpperCase()}`), M, 13.5);
+      doc.setFont("helvetica","normal"); doc.setFontSize(8.5); doc.setTextColor(...GOLD2);
+      doc.text("Médiateur numérique · Session 2026 (suite)", M, 18.5);
+    }
+  }
+  function footerAll(){
+    const n = doc.getNumberOfPages();
+    for(let p=1;p<=n;p++){
+      doc.setPage(p);
+      doc.setDrawColor(...LINE); doc.setLineWidth(0.3); doc.line(M, H-14, W-M, H-14);
+      doc.setFont("helvetica","normal"); doc.setFontSize(7.5); doc.setTextColor(...GREY);
+      doc.text(T(`Généré le ${genAt.toLocaleDateString("fr-FR")} à ${pad(genAt.getHours())}:${pad(genAt.getMinutes())} · Outil d'aide à l'entretien - ne se substitue pas au procès-verbal officiel de la session.`), M, H-9);
+      doc.text(`${p} / ${n}`, W-M, H-9, {align:"right"});
+    }
+  }
+  function ring(cx,cy,r,pct,color){
+    doc.setLineWidth(3.2); doc.setDrawColor(232,228,216); doc.circle(cx,cy,r,"S");
+    if(pct>0){
+      doc.setDrawColor(...color); doc.setLineCap("round");
+      const steps=Math.max(2,Math.round(120*pct/100)); const a0=-Math.PI/2;
+      let px=cx+r*Math.cos(a0), py=cy+r*Math.sin(a0);
+      for(let k=1;k<=steps;k++){ const a=a0+(2*Math.PI*pct/100)*k/steps; const x=cx+r*Math.cos(a), y=cy+r*Math.sin(a); doc.line(px,py,x,y); px=x; py=y; }
+      doc.setLineCap("butt");
+    }
+    doc.setFont("times","bold"); doc.setFontSize(22); doc.setTextColor(...INK); doc.text(`${pct} %`, cx, cy+2, {align:"center"});
+    doc.setFont("helvetica","normal"); doc.setFontSize(7.5); doc.setTextColor(...GREY); doc.text(`${s.pts} / 100 pts`, cx, cy+7.5, {align:"center"});
+  }
+
+  header(true);
+  // Carte candidat
+  let y = 62;
+  doc.setFillColor(251,249,243); doc.setDrawColor(...LINE); doc.setLineWidth(0.3);
+  doc.roundedRect(M, y, W-2*M, 52, 3, 3, "FD");
+  doc.setFillColor(...GOLD); doc.rect(M, y, 1.6, 52, "F");
+  doc.setFont("helvetica","bold"); doc.setFontSize(7.5); doc.setTextColor(...GOLD); doc.setCharSpace(1);
+  doc.text("CANDIDAT", M+8, y+9); doc.setCharSpace(0);
+  doc.setFont("times","bold"); doc.setFontSize(20); doc.setTextColor(...INK);
+  doc.text(T(`${c.prenom} ${c.nom.toUpperCase()}`), M+8, y+18, {maxWidth:118});
+  const rows=[["Présentation", fmtDate(c.dt)],["Projet présenté", c.projet||"-"],["Membre du jury", c.jury||"-"],["Centre d'examen", c.centre||"-"]];
+  let ry=y+26;
+  rows.forEach(([k,v])=>{
+    doc.setFont("helvetica","normal"); doc.setFontSize(8); doc.setTextColor(...GREY); doc.text(T(k), M+8, ry);
+    doc.setFont("helvetica","bold"); doc.setFontSize(9); doc.setTextColor(...INK);
+    const t=doc.splitTextToSize(T(v), 88); doc.text(t[0]+(t.length>1?"...":""), M+38, ry); ry+=6.2;
+  });
+  ring(W-M-26, y+26, 16, s.pts, s.pass?COL.A:COL.NA);
+
+  // Verdict
+  y += 60;
+  const vc = s.pass?COL.A:COL.NA, vb = s.pass?BG.A:BG.NA;
+  doc.setFillColor(...vb); doc.setDrawColor(...vc); doc.setLineWidth(0.5); doc.roundedRect(M, y, W-2*M, 15, 3, 3, "FD");
+  doc.setFont("helvetica","bold"); doc.setFontSize(11.5); doc.setTextColor(...vc);
+  doc.text(T(s.pass?`SEUIL DE RÉUSSITE ATTEINT - ${s.pts} % (seuil : 70 %)`:`SEUIL DE RÉUSSITE NON ATTEINT - ${s.pts} % (seuil : 70 %)`), W/2, y+9.6, {align:"center"});
+
+  // Synthèse chiffrée
+  y += 22;
+  const boxes=[["Acquis",s.cnt.A,"A"],["En cours",s.cnt.ECA,"ECA"],["Non acquis",s.cnt.NA,"NA"],["CCP 1",`${s.b1}/50`,null],["CCP 2",`${s.b2}/50`,null]];
+  const bw=(W-2*M-4*4)/5;
+  boxes.forEach(([l,v,k],j)=>{
+    const x=M+j*(bw+4);
+    doc.setFillColor(...(k?BG[k]:[245,241,230])); doc.setDrawColor(...LINE); doc.roundedRect(x,y,bw,17,2.5,2.5,"FD");
+    doc.setFont("times","bold"); doc.setFontSize(15); doc.setTextColor(...(k?COL[k]:INK)); doc.text(String(v), x+bw/2, y+8.5, {align:"center"});
+    doc.setFont("helvetica","normal"); doc.setFontSize(7.5); doc.setTextColor(...GREY); doc.text(l, x+bw/2, y+13.8, {align:"center"});
+  });
+  // Barre seuil
+  y += 24;
+  doc.setFillColor(236,232,220); doc.roundedRect(M, y, W-2*M, 3.2, 1.6, 1.6, "F");
+  doc.setFillColor(...(s.pass?COL.A:GOLD)); if(s.pts>0) doc.roundedRect(M, y, (W-2*M)*s.pts/100, 3.2, 1.6, 1.6, "F");
+  const tx=M+(W-2*M)*0.7; doc.setDrawColor(...INK); doc.setLineWidth(0.5); doc.line(tx,y-2,tx,y+5.2);
+  doc.setFont("helvetica","bold"); doc.setFontSize(7); doc.setTextColor(...INK); doc.text("70 %", tx, y+8.6, {align:"center"});
+
+  // Tableau détaillé
+  y += 16;
+  doc.setFont("times","bold"); doc.setFontSize(14); doc.setTextColor(...INK); doc.text("Détail par compétence", M, y); y+=5;
+  const cx={n:M+2, comp:M+12, lvl:W-M-48, pts:W-M-3};
+  function thead(){
+    doc.setFillColor(...OBS); doc.rect(M, y, W-2*M, 8, "F");
+    doc.setFont("helvetica","bold"); doc.setFontSize(7.5); doc.setTextColor(...GOLD2);
+    doc.text("N°", cx.n, y+5.3); doc.text(T("COMPÉTENCE ÉVALUÉE"), cx.comp, y+5.3); doc.text("NIVEAU", cx.lvl, y+5.3); doc.text("POINTS", cx.pts, y+5.3, {align:"right"});
+    y+=8;
+  }
+  thead();
+  QUESTIONS.forEach((Q,i)=>{
+    const e=rec.evals[i]||"none";
+    const compLines = doc.setFont("helvetica","bold").setFontSize(9) && doc.splitTextToSize(T(Q.comp), cx.lvl-cx.comp-6);
+    const note = rec.notes[i] ? doc.setFont("helvetica","italic").setFontSize(8) && doc.splitTextToSize(T("Observation : "+rec.notes[i]), cx.lvl-cx.comp-6) : [];
+    const h = 5 + compLines.length*4.3 + 4.2 + (note.length? note.length*3.7+1.5:0) + 3;
+    if(y+h > H-22){ doc.addPage(); header(false); y=32; thead(); }
+    if(i%2===0){ doc.setFillColor(250,248,242); doc.rect(M,y,W-2*M,h,"F"); }
+    doc.setFont("times","bolditalic"); doc.setFontSize(13); doc.setTextColor(...GOLD); doc.text(String(i+1), cx.n+1, y+7);
+    doc.setFont("helvetica","bold"); doc.setFontSize(9); doc.setTextColor(...INK); doc.text(compLines, cx.comp, y+5.8);
+    let yy = y+5.8+compLines.length*4.3;
+    doc.setFont("helvetica","normal"); doc.setFontSize(7.5); doc.setTextColor(...GREY); doc.text(`CCP ${Q.bloc} · ${Q.bloc===1?"Usage autonome des outils et services en ligne":"Publics éloignés du numérique, réseau territorial"}`, cx.comp, yy); yy+=4.2;
+    if(note.length){ doc.setFont("helvetica","italic"); doc.setFontSize(8); doc.setTextColor(70,66,58); doc.text(note, cx.comp, yy); }
+    const lbl = e==="none"?"Non évaluée":LEVELS[e].label; doc.setFont("helvetica","bold"); doc.setFontSize(7.5);
+    const lw = doc.getTextWidth(T(lbl))+6;
+    doc.setFillColor(...BG[e]); doc.setDrawColor(...COL[e]); doc.setLineWidth(0.3); doc.roundedRect(cx.lvl, y+2.6, lw, 5.6, 2.8, 2.8, "FD");
+    doc.setTextColor(...COL[e]); doc.text(T(lbl), cx.lvl+3, y+6.3);
+    doc.setFont("helvetica","bold"); doc.setFontSize(10); doc.setTextColor(...INK); doc.text(`${e==="none"?0:LEVELS[e].pts}/10`, cx.pts, y+6.6, {align:"right"});
+    y+=h; doc.setDrawColor(...LINE); doc.setLineWidth(0.2); doc.line(M,y,W-M,y);
+  });
+  // Total
+  doc.setFillColor(245,241,230); doc.rect(M,y,W-2*M,9,"F");
+  doc.setFont("helvetica","bold"); doc.setFontSize(9.5); doc.setTextColor(...INK);
+  doc.text("TOTAL", cx.comp, y+6); doc.text(`${s.pts} / 100`, cx.pts, y+6, {align:"right"}); y+=15;
+
+  // Appréciation + signature
+  const app = doc.setFont("helvetica","normal").setFontSize(9.5) && doc.splitTextToSize(T(rec.appreciation||"Aucune appréciation saisie."), W-2*M-12);
+  const ah = Math.max(26, app.length*4.6+16);
+  if(y+ah+40 > H-20){ doc.addPage(); header(false); y=34; }
+  doc.setFont("times","bold"); doc.setFontSize(14); doc.setTextColor(...INK); doc.text(T("Appréciation générale du jury"), M, y); y+=4;
+  doc.setDrawColor(...LINE); doc.setFillColor(251,249,243); doc.setLineWidth(0.3); doc.roundedRect(M,y,W-2*M,ah,3,3,"FD");
+  doc.setFont("helvetica","normal"); doc.setFontSize(9.5); doc.setTextColor(rec.appreciation?INK[0]:GREY[0], rec.appreciation?INK[1]:GREY[1], rec.appreciation?INK[2]:GREY[2]);
+  doc.text(app, M+6, y+9); y+=ah+8;
+  const sw=(W-2*M-8)/2;
+  [["Membre du jury", c.jury||""],["Date et signature",""]].forEach(([l,v],j)=>{
+    const x=M+j*(sw+8);
+    doc.setDrawColor(...GOLD); doc.setLineWidth(0.4); doc.roundedRect(x,y,sw,28,3,3,"S");
+    doc.setFont("helvetica","bold"); doc.setFontSize(7.5); doc.setTextColor(...GOLD); doc.text(T(l.toUpperCase()), x+5, y+6.5);
+    if(v){ doc.setFont("times","bold"); doc.setFontSize(12); doc.setTextColor(...INK); doc.text(T(v), x+5, y+14); }
+  });
+  footerAll();
+  return doc.output("blob");
+}
+function pdfName(rec){ const d=(rec.cand.dt||"").replace("T","_").replace(":","h"); return `Bilan_Mediateur-Numerique_2026_${slug(rec.cand.nom).toUpperCase()}_${slug(rec.cand.prenom)}_${d}.pdf`; }
+async function downloadPdf(rec){
+  if(!window.jspdf){ toast("Le générateur PDF n'est pas encore chargé, réessayez dans un instant."); return; }
+  try{ const blob = buildPdf(rec); await offerFile(pdfName(rec), blob); }
+  catch(err){ console.error(err); toast("Erreur lors de la génération du PDF."); }
+}
+$("#dlPdf").addEventListener("click", async ()=>{ archive(); const rec=history.find(h=>h.id===state.id); await downloadPdf(rec); });
+
+/* ---------- Historique ---------- */
+function renderHistory(){
+  $("#histCount").textContent = history.length;
+  const L=$("#histList");
+  if(!history.length){ L.innerHTML = `<p class="empty">Aucun candidat enregistré pour l'instant.<br>Les bilans s'ajoutent ici lorsque vous les téléchargez ou passez au candidat suivant.</p>`; return; }
+  L.innerHTML = history.map(h=>{ const ok=h.pts>=THRESHOLD; return `<div class="hist">
+    <div class="hist-top"><b>${esc(h.cand.prenom)} ${esc(h.cand.nom.toUpperCase())}</b><span style="color:${ok?"var(--ok)":"var(--ko)"}">${h.pts} %</span></div>
+    <small>${esc(fmtDate(h.cand.dt))}${h.cand.projet?" · "+esc(h.cand.projet):""}</small>
+    <div class="row"><button class="btn btn-sm btn-gold" data-pdf="${h.id}" type="button">PDF</button><button class="btn btn-sm" data-open="${h.id}" type="button">Rouvrir</button><button class="btn btn-sm btn-ghost" data-del="${h.id}" type="button">Supprimer</button></div></div>`; }).join("");
+  $$("[data-pdf]").forEach(b=>b.addEventListener("click",()=>downloadPdf(history.find(h=>h.id===b.dataset.pdf))));
+  $$("[data-open]").forEach(b=>b.addEventListener("click",()=>{
+    const h=history.find(x=>x.id===b.dataset.open); if(state.cand.prenom && state.id!==h.id) archive();
+    state={...freshState(), id:h.id, cand:{...h.cand}, evals:[...h.evals], notes:[...h.notes], appreciation:h.appreciation||""};
+    chrono.set(h.duree||0); fillForm(); closeDrawer(); go("bilan");
+  }));
+  $$("[data-del]").forEach(b=>b.addEventListener("click",()=>{
+    if(!b.dataset.confirm){ b.dataset.confirm="1"; b.textContent="Confirmer ?"; setTimeout(()=>{ if(b.isConnected){ delete b.dataset.confirm; b.textContent="Supprimer"; } },3000); return; }
+    history = history.filter(h=>h.id!==b.dataset.del); store(STORE_KEY, history); renderHistory(); toast("Entretien supprimé.");
+  }));
+}
+function openDrawer(){ $("#drawer").classList.add("open"); $("#scrim").classList.add("open"); $("#drawer").setAttribute("aria-hidden","false"); renderHistory(); $("#closeHistory").focus(); }
+function closeDrawer(){ $("#drawer").classList.remove("open"); $("#scrim").classList.remove("open"); $("#drawer").setAttribute("aria-hidden","true"); $("#openHistory").focus(); }
+$("#openHistory").addEventListener("click", openDrawer); $("#closeHistory").addEventListener("click", closeDrawer); $("#scrim").addEventListener("click", closeDrawer);
+document.addEventListener("keydown", e=>{ if(e.key==="Escape" && $("#drawer").classList.contains("open")) closeDrawer(); });
+$("#dlCsv").addEventListener("click", ()=>{
+  if(state.cand.prenom) archive();
+  if(!history.length){ toast("Aucun candidat à exporter."); return; }
+  const q = v => `"${String(v??"").replace(/"/g,'""')}"`;
+  const head = ["Prénom","Nom","Date et heure","Projet","Jury","Centre", ...QUESTIONS.map((_,i)=>"Q"+(i+1)), "CCP1 /50","CCP2 /50","Score /100","Seuil 70 %","Durée (min)","Appréciation"];
+  const lines = history.map(h=>{ const s=score(h); return [h.cand.prenom,h.cand.nom,fmtDate(h.cand.dt),h.cand.projet,h.cand.jury,h.cand.centre, ...h.evals.map(e=>e?LEVELS[e].label:"Non évaluée"), s.b1,s.b2,s.pts, s.pass?"Atteint":"Non atteint", Math.round((h.duree||0)/60), h.appreciation].map(q).join(";"); });
+  offerFile(`Session_Jury_Mediateur-Numerique_2026_${new Date().toISOString().slice(0,10)}.csv`, "﻿"+[head.map(q).join(";"),...lines].join("\r\n"));
+});
+
+/* ---------- Chronomètre ---------- */
+const chrono = {
+  running:false, elapsed:0, t0:0, timer:null,
+  fmt(){ const s=Math.floor(this.elapsed/1000); return `${pad(Math.floor(s/60))}:${pad(s%60)}`; },
+  paint(){ $("#chronoTime").textContent=this.fmt(); $("#chronoIcon").setAttribute("d", this.running?"M3 2h3v10H3zM8 2h3v10H8z":"M3 1.5v11l9-5.5z"); $("#chronoToggle").setAttribute("aria-label", this.running?"Mettre le chronomètre en pause":"Démarrer le chronomètre"); },
+  toggle(){ if(this.running){ this.elapsed+=Date.now()-this.t0; clearInterval(this.timer); this.running=false; } else { this.t0=Date.now(); this.running=true; this.timer=setInterval(()=>{ const e=this.elapsed+Date.now()-this.t0; $("#chronoTime").textContent=`${pad(Math.floor(e/60000))}:${pad(Math.floor(e/1000)%60)}`; },500); } this.paint(); },
+  reset(){ clearInterval(this.timer); this.running=false; this.elapsed=0; this.paint(); },
+  set(ms){ this.reset(); this.elapsed=ms; this.paint(); },
+  get value(){ return this.running ? this.elapsed+Date.now()-this.t0 : this.elapsed; }
+};
+$("#chronoToggle").addEventListener("click",()=>chrono.toggle());
+$("#chronoReset").addEventListener("click",()=>chrono.reset());
+
+/* ---------- Init ---------- */
+(function init(){
+  const d = store(DRAFT_KEY);
+  if(d && d.cand && d.cand.prenom){ state = {...freshState(), ...d, revealed:Array(10).fill(false)}; }
+  else {
+    try{ const last=JSON.parse(localStorage.getItem("mn-jury-2026-last")||"{}"); state.cand.jury=last.jury||""; state.cand.centre=last.centre||""; }catch(_){}
+  }
+  fillForm(); renderHistory();
+  go(d && d.cand && d.cand.prenom ? (d.view||"entretien") : "candidat");
+  if(d && d.cand && d.cand.prenom) toast(`Entretien de ${d.cand.prenom} ${d.cand.nom} restauré.`);
+})();
+</script>
+<!-- ===== AJOUT v2 : script des nouvelles fonctions (le script d'origine ci-dessus est inchangé) ===== -->
+<script>
+"use strict";
+(function(){
+  const root = document.documentElement;
+  const live = document.getElementById("a11yLive");
+  const say = m => { live.textContent=""; setTimeout(()=>{ live.textContent=m; },40); };
+  const keep = (k,v) => { try{ localStorage.setItem(k,v); }catch(_){} };
+  const read = k => { try{ return localStorage.getItem(k); }catch(_){ return null; } };
+
+  /* ---------- Thème clair / sombre ---------- */
+  const SUN = '<circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 1.8v2.6M12 19.6v2.6M1.8 12h2.6M19.6 12h2.6M4.8 4.8l1.8 1.8M17.4 17.4l1.8 1.8M4.8 19.2l1.8-1.8M17.4 6.6l1.8-1.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>';
+  const MOON = '<path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>';
+  function applyTheme(t, announce){
+    root.setAttribute("data-theme", t);
+    const light = t==="light";
+    const b=$("#themeToggle");
+    b.setAttribute("aria-pressed", String(light));
+    b.setAttribute("aria-label", light?"Passer en mode sombre":"Passer en mode clair");
+    $("#themeIcon").innerHTML = light ? MOON : SUN;
+    $("#themeLbl").textContent = light ? "Sombre" : "Clair";
+    const m=document.querySelector('meta[name="theme-color"]') || Object.assign(document.head.appendChild(document.createElement("meta")),{name:"theme-color"});
+    m.content = light ? "#f7f3e8" : "#0a0a0d";
+    if(announce){ keep("mn-jury-theme", t); say(light?"Mode clair activé":"Mode sombre activé"); }
+  }
+  $("#themeToggle").addEventListener("click", ()=>applyTheme(root.getAttribute("data-theme")==="light"?"dark":"light", true));
+  applyTheme(root.getAttribute("data-theme")==="light"?"light":"dark", false);
+
+  /* ---------- Taille des textes : 80 % → 135 % ---------- */
+  const ZMIN=0.8, ZMAX=1.35, ZSTEP=0.1;
+  let z = parseFloat(getComputedStyle(root).getPropertyValue("--z")) || 1;
+  function layoutClasses(){
+    const eff = window.innerWidth / z;
+    root.classList.toggle("zn", eff < 1040);
+    root.classList.toggle("zxn", eff < 640);
+  }
+  function applyZoom(v, announce){
+    z = Math.round(Math.min(ZMAX, Math.max(ZMIN, v))*100)/100;
+    root.style.setProperty("--z", z);
+    const pct = Math.round(z*100);
+    $("#zoomReset").textContent = pct+" %";
+    $("#zoomReset").setAttribute("aria-label", `Taille des textes : ${pct} %. Rétablir 100 %`);
+    $("#zoomIn").disabled = z >= ZMAX; $("#zoomOut").disabled = z <= ZMIN;
+    layoutClasses();
+    if(announce){ keep("mn-jury-zoom", String(z)); say(`Taille des textes : ${pct} %${z>=ZMAX?", maximum atteint":z<=ZMIN?", minimum atteint":""}`); }
+  }
+  $("#zoomIn").addEventListener("click", ()=>{ const n = z+ZSTEP > ZMAX-0.001 ? ZMAX : z+ZSTEP; applyZoom(n, true); });
+  $("#zoomOut").addEventListener("click", ()=>{ const n = z >= ZMAX-0.001 ? 1.25 : z-ZSTEP; applyZoom(n, true); });
+  $("#zoomReset").addEventListener("click", ()=>applyZoom(1, true));
+  window.addEventListener("resize", layoutClasses);
+  applyZoom(z, false);
+
+  /* ---------- Chronomètre : arrêt automatique au temps officiel ----------
+     Durées de la fiche France Compétences RNCP 40695 (consultée le 12/11/2026). */
+  const LIMITS = {
+    ccp12:{min:55, label:"55 min · CCP 1+2", long:"Entretiens techniques CCP 1 (15 min) + CCP 2 (40 min)"},
+    ccp2: {min:40, label:"40 min · CCP 2", long:"Entretien technique du CCP 2"},
+    ccp1: {min:15, label:"15 min · CCP 1", long:"Entretien technique du CCP 1 (et récapitulatif du titre)"},
+    final:{min:15, label:"15 min · Final", long:"Entretien final"}
+  };
+  const sel = $("#chronoLimit");
+  sel.innerHTML = Object.entries(LIMITS).map(([k,L])=>`<option value="${k}" title="${L.long}">${L.label}</option>`).join("");
+  let limitKey = LIMITS[read("mn-jury-limit")] ? read("mn-jury-limit") : "ccp12";
+  sel.value = limitKey;
+  const limitMs = () => LIMITS[limitKey].min*60000;
+  const fmtMs = ms => { const t=Math.floor(ms/1000); return `${pad(Math.floor(t/60))}:${pad(t%60)}`; };
+  const box = document.querySelector(".chrono");
+
+  chrono.paint = function(){
+    const lim = limitMs(), v = Math.min(this.value, lim), r = v/lim;
+    $("#chronoTime").textContent = `${fmtMs(v)} / ${fmtMs(lim)}`;
+    $("#chronoIcon").setAttribute("d", this.running ? "M3 2h3v10H3zM8 2h3v10H8z" : "M3 1.5v11l9-5.5z");
+    $("#chronoToggle").setAttribute("aria-label", r>=1 ? "Temps officiel atteint" : this.running ? "Mettre le chronomètre en pause" : "Démarrer le chronomètre");
+    $("#chronoToggle").disabled = r >= 1;
+    box.classList.toggle("is-warn", r >= 0.8 && r < 1);
+    box.classList.toggle("is-done", r >= 1);
+    $("#chronoState").textContent = r >= 1 ? "Temps officiel atteint" : "";
+  };
+  chrono.tick = function(){
+    if(this.value >= limitMs()){
+      clearInterval(this.timer); this.running=false; this.elapsed = limitMs(); this.paint();
+      const m = `Temps officiel atteint (${LIMITS[limitKey].min} min) : chronomètre arrêté.`;
+      toast(m); say(m);
+    } else {
+      this.paint();
+      const left = limitMs() - this.value;
+      if(!this._warned && left <= 2*60000){ this._warned = true; say("Il reste 2 minutes d'entretien."); }
+    }
+  };
+  chrono.toggle = function(){
+    if(this.running){ this.elapsed += Date.now()-this.t0; clearInterval(this.timer); this.running=false; }
+    else {
+      if(this.elapsed >= limitMs()){ toast("Temps officiel déjà atteint pour ce candidat."); return; }
+      this.t0 = Date.now(); this.running = true; this.timer = setInterval(()=>this.tick(), 250);
+    }
+    this.paint();
+  };
+  chrono.reset = function(){ clearInterval(this.timer); this.running=false; this.elapsed=0; this._warned=false; this.paint(); };
+  chrono.set = function(ms){ this.reset(); this.elapsed = ms||0; this._warned = this.elapsed >= limitMs()-2*60000; this.paint(); };
+
+  sel.addEventListener("change", ()=>{
+    if(chrono.running){ chrono.elapsed += Date.now()-chrono.t0; chrono.t0 = Date.now(); }
+    limitKey = sel.value; keep("mn-jury-limit", limitKey);
+    chrono._warned = chrono.value >= limitMs()-2*60000;
+    if(chrono.value >= limitMs()) chrono.tick(); else chrono.paint();
+    say(`Durée officielle : ${LIMITS[limitKey].long}, ${LIMITS[limitKey].min} minutes.`);
+  });
+  chrono.paint();
+})();
+</script>
+<!-- ===== AJOUT v3 : clic sur un onglet (CCP 1+2, CCP 2, CCP 1, Final) → questions de cet onglet uniquement
+     (les scripts ci-dessus sont inchangés ; ce bloc complète leurs fonctions) ===== -->
+<script>
+"use strict";
+(function(){
+  const sel = document.getElementById("chronoLimit");
+  const liveEl = document.getElementById("a11yLive");
+  const announce = m => { liveEl.textContent=""; setTimeout(()=>{ liveEl.textContent=m; },60); };
+
+  /* ---------- Onglets → questions concernées ---------- */
+  const SCOPES = {
+    ccp12:{label:"CCP 1 + CCP 2", short:"CCP 1 + 2", tab:"55 min · CCP 1+2", idx:[0,1,2,3,4,5,6,7,8,9]},
+    ccp2: {label:"CCP 2", short:"CCP 2", tab:"40 min · CCP 2", idx:[5,6,7,8,9]},
+    ccp1: {label:"CCP 1", short:"CCP 1", tab:"15 min · CCP 1", idx:[0,1,2,3,4]},
+    final:{label:"Entretien final", short:"Final", tab:"15 min · Final", idx:[]}
+  };
+
+  /* ---------- Questions de l'entretien final ---------- */
+  const FINAL_Q = [
+  {
+    comp:"Présenter son parcours et son dossier professionnel",
+    q:"Présentez-vous en quelques minutes : votre parcours, ce qui vous a conduit vers la médiation numérique, et les deux ou trois expériences de votre dossier professionnel qui illustrent le mieux vos compétences.",
+    anchor:"Laissez le candidat dérouler sans l'interrompre, puis faites-lui préciser une expérience du dossier professionnel : contexte, public, rôle exact, résultat.",
+    relances:["Quelle expérience de votre dossier vous rend le plus fier, et pourquoi ?","Quelle situation a été la plus difficile, et qu'en avez-vous retiré ?","En quoi votre parcours antérieur est-il un atout pour ce métier ?"],
+    answer:[
+      "<strong>Présentation structurée</strong> : parcours, déclic vers la médiation numérique, formation, stages, dans un temps maîtrisé.",
+      "<strong>Exemples tirés du dossier professionnel</strong> : situations réelles, contexte, public, actions menées personnellement (« je » et non « on »), résultats obtenus.",
+      "<strong>Couverture du titre</strong> : expériences reliées aux deux CCP — usage autonome des publics, et accompagnement des publics éloignés dans un réseau territorial.",
+      "<strong>Recul</strong> : difficultés rencontrées, enseignements tirés, progrès constatés.",
+      "<strong>Expression orale</strong> : clarté, vocabulaire professionnel, posture adaptée face au jury."
+    ],
+    crit:{A:"Présentation claire et maîtrisée, expériences concrètes reliées aux deux CCP, recul sur sa pratique.",ECA:"Présentation correcte mais exemples peu précis ou centrés sur un seul CCP.",NA:"Présentation confuse, aucune expérience concrète ou rôle personnel indiscernable."}
+  },
+  {
+    comp:"Se représenter le métier et son environnement professionnel",
+    q:"Comment décririez-vous le métier de médiateur numérique à quelqu'un qui ne le connaît pas ? Dans quelles structures l'exerce-t-on, et quelles évolutions voyez-vous pour ce métier dans les prochaines années ?",
+    anchor:"Demandez au candidat de s'appuyer sur les structures rencontrées pendant ses stages et sur son territoire.",
+    relances:["Qu'est-ce qui distingue un médiateur numérique d'un formateur en informatique ou d'un technicien ?","Qui finance la médiation numérique sur votre territoire ?","Quel impact l'intelligence artificielle a-t-elle sur le métier ?"],
+    answer:[
+      "<strong>Finalité du métier</strong> : rendre les publics autonomes dans leurs usages numériques et lutter contre l'exclusion numérique ; « faire avec », pas « faire à la place ».",
+      "<strong>Structures d'exercice</strong> : collectivités et CCAS, France Services, associations, centres sociaux, médiathèques, tiers-lieux, missions locales, bailleurs sociaux, structures de l'économie sociale et solidaire.",
+      "<strong>Cadre public</strong> : politiques d'inclusion numérique portées par l'État et l'ANCT (dispositif Conseillers numériques, feuille de route France Numérique Ensemble), relayées par les réseaux territoriaux.",
+      "<strong>Évolutions</strong> : dématérialisation croissante des démarches, IA générative, cybersécurité, accessibilité, pérennité des financements et des postes.",
+      "<strong>Distinction des rôles</strong> : ni technicien de dépannage, ni travailleur social, ni formateur bureautique — un accompagnateur vers l'autonomie numérique."
+    ],
+    crit:{A:"Vision juste et argumentée du métier, structures et cadre public connus, évolutions identifiées.",ECA:"Vision correcte mais environnement institutionnel ou évolutions peu maîtrisés.",NA:"Confusion avec un autre métier, méconnaissance de l'environnement professionnel."}
+  },
+  {
+    comp:"Adopter une posture éthique et respecter les limites de son rôle",
+    q:"Quelles règles éthiques guident votre pratique de médiateur numérique ? Racontez une situation où vous avez dû poser une limite à une personne accompagnée ou à une demande.",
+    anchor:"Faites relier la réponse à une situation vécue en stage ou citée dans le dossier professionnel.",
+    relances:["Que faites-vous si une personne vous confie une information très personnelle pendant une démarche ?","Comment restez-vous neutre face aux opinions ou aux choix d'une personne ?","Où s'arrête votre rôle face à une situation sociale difficile ?"],
+    answer:[
+      "<strong>Principes</strong> : bienveillance, non-jugement, neutralité, respect de l'autonomie et du rythme de la personne, égalité d'accès.",
+      "<strong>Confidentialité et données</strong> : discrétion sur les informations confiées, RGPD, consentement, aucune conservation d'identifiants.",
+      "<strong>Limites du rôle</strong> : ne pas faire à la place hors cadre habilité (Aidants Connect), pas de conseil juridique, médical, bancaire ou social ; orientation vers le professionnel compétent.",
+      "<strong>Situation de limite</strong> décrite avec précision : ce qui a été dit, comment, et la solution proposée.",
+      "<strong>Posture professionnelle</strong> : distance adaptée, travail en équipe, remontée à la structure en cas de doute ou de situation préoccupante."
+    ],
+    crit:{A:"Principes éthiques explicites, situation de limite concrète et bien gérée, orientation adaptée.",ECA:"Principes cités mais situation peu précise ou gestion de la limite approximative.",NA:"Aucune limite posée, ou pratique contraire à la confidentialité ou à l'autonomie."}
+  },
+  {
+    comp:"Analyser sa progression et apprendre en continu",
+    q:"Quelle compétence avez-vous le plus développée pendant votre formation, et laquelle souhaitez-vous encore renforcer ? Comment vous tenez-vous à jour face aux évolutions rapides du numérique ?",
+    anchor:"Demandez une preuve concrète de la progression (avant / après) et une action de veille réellement pratiquée.",
+    relances:["Quelle est votre dernière découverte utile pour vos publics ?","Quelles ressources consultez-vous régulièrement ?","Comment mettez-vous à jour vos supports d'atelier ?"],
+    answer:[
+      "<strong>Auto-évaluation honnête</strong> : point fort argumenté par un exemple, axe de progrès assumé.",
+      "<strong>Plan d'action</strong> concret pour progresser : formation, tutorat, échanges de pratiques, mises en situation.",
+      "<strong>Veille organisée</strong> : ressources du réseau de la médiation numérique, sites institutionnels (cybermalveillance.gouv.fr, service-public.fr), lettres d'information, webinaires, Pix.",
+      "<strong>Transfert</strong> : actualisation des supports et des ateliers selon les nouveautés (démarches, applications, arnaques, IA).",
+      "<strong>Compétences transversales</strong> : communication, travail en équipe et en réseau, adaptation, apprentissage en continu."
+    ],
+    crit:{A:"Auto-évaluation lucide, plan de progression concret, veille réelle et appliquée aux publics.",ECA:"Auto-évaluation superficielle ou veille peu organisée.",NA:"Aucun recul sur sa progression, aucune démarche de mise à jour."}
+  },
+  {
+    comp:"Construire son projet professionnel",
+    q:"Quel est votre projet professionnel à l'issue du titre ? Dans quel type de structure et auprès de quels publics vous projetez-vous, et quelles démarches avez-vous déjà engagées ?",
+    anchor:"Faites préciser le territoire visé, les structures ciblées et les démarches concrètes : candidatures, contacts, réseau.",
+    relances:["Que connaissez-vous du marché de l'emploi de la médiation numérique sur votre territoire ?","Quel est votre plan B ?","Comment vos stages ont-ils orienté votre projet ?"],
+    answer:[
+      "<strong>Projet clair et réaliste</strong> : poste visé, type de structure, publics, territoire.",
+      "<strong>Cohérence</strong> avec le parcours, les stages et les compétences démontrées pendant l'épreuve.",
+      "<strong>Connaissance du marché</strong> : employeurs locaux, types de contrats, financement des postes.",
+      "<strong>Démarches engagées</strong> : candidatures, contacts noués pendant les stages, réseau professionnel activé.",
+      "<strong>Alternatives</strong> envisagées et pistes d'évolution (spécialisation, coordination, formation complémentaire)."
+    ],
+    crit:{A:"Projet précis, cohérent et étayé par des démarches concrètes.",ECA:"Projet identifié mais peu étayé, ou démarches non engagées.",NA:"Aucun projet formulé, ou projet sans lien avec le titre."}
+  }
+  ];
+  const NF = FINAL_Q.length;
+
+  const scopeKey = () => SCOPES[sel.value] ? sel.value : "ccp12";
+  const isFinal = () => scopeKey()==="final";
+  function fin(){
+    if(!Array.isArray(state.finEvals)||state.finEvals.length!==NF) state.finEvals=Array(NF).fill(null);
+    if(!Array.isArray(state.finNotes)||state.finNotes.length!==NF) state.finNotes=Array(NF).fill("");
+    if(!Array.isArray(state.finRevealed)||state.finRevealed.length!==NF) state.finRevealed=Array(NF).fill(false);
+    if(!(state.finCurrent>=0 && state.finCurrent<NF)) state.finCurrent=0;
+  }
+  function finScore(src){
+    const ev = src ? (src.finEvals||[]) : (fin(), state.finEvals);
+    let pts=0, done=0; ev.forEach(e=>{ if(e&&LEVELS[e]){ done++; pts+=LEVELS[e].pts; } });
+    return {pts, done, max:NF*10};
+  }
+  const ICON = '<svg width="20" height="20" viewBox="0 0 22 22" aria-hidden="true"><path d="M3 5.5h16M3 11h16M3 16.5h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
+  const band = html => `<div class="scope-band" role="note">${ICON}<span>${html}</span></div>`;
+
+  function updateStepLabel(){
+    const k=scopeKey(), S=SCOPES[k], n = k==="final" ? NF : S.idx.length;
+    $$(".step")[1].innerHTML = `<span>2</span>Entretien · ${esc(S.short)} · ${n} questions`;
+  }
+  function clampCurrent(){
+    const idx = SCOPES[scopeKey()].idx;
+    if(!idx.includes(state.current)){ const f = idx.find(i=>!state.evals[i]); state.current = f!==undefined ? f : idx[0]; }
+  }
+
+  /* ---------- Fonctions d'origine complétées ---------- */
+  const origRender = renderQuestion, origSide = renderSide, origSetEval = setEval, origToggle = toggleReveal,
+        origBilan = renderBilan, origArchive = archive, origHistory = renderHistory;
+
+  renderQuestion = function(){
+    if(isFinal()) renderFinalQuestion(); else renderScopedQuestion();
+    noNameBand();
+  };
+  function renderScopedQuestion(){
+    clampCurrent();
+    origRender();
+    const k=scopeKey(), S=SCOPES[k], idx=S.idx, pos=idx.indexOf(state.current);
+    $("#qcard").insertAdjacentHTML("afterbegin", band(`Onglet sélectionné : <b>${esc(S.tab)}</b> — question ${pos+1} sur ${idx.length} de cet entretien (${esc(S.label)}).`));
+    const pv=$("#prevQ"); if(pv) pv.disabled = pos<=0;
+    const nx=$("#nextQ");
+    if(nx && pos===idx.length-1){
+      const b=document.createElement("button");
+      b.className="btn btn-gold"; b.type="button"; b.id="endQ";
+      b.textContent = `Terminer le ${S.label} et voir le bilan`;
+      b.addEventListener("click",()=>go("bilan"));
+      nx.replaceWith(b);
+    }
+  }
+
+  /* ---------- Évaluer d'abord, renseigner le candidat ensuite ---------- */
+  const named = () => !!(state.cand.prenom && state.cand.nom);
+  function goCandidat(){ go("candidat"); setTimeout(()=>{ const f=!state.cand.prenom?$("#prenom"):$("#nom"); if(f) f.focus(); },350); }
+  function noNameBand(){
+    if(named()) return;
+    const card=$("#qcard"); if(!card) return;
+    card.insertAdjacentHTML("afterbegin", `<div class="scope-band" role="note">${ICON}<span>Candidat pas encore renseigné : évaluez librement, puis saisissez son identité quand vous voulez. Les évaluations sont conservées. <button class="btn btn-sm" id="fillCand" type="button" style="margin-left:6px">Renseigner le candidat</button></span></div>`);
+    $("#fillCand").addEventListener("click", goCandidat);
+  }
+  const origGo = go;
+  go = function(view){
+    origGo(view);
+    $$(".step")[1].disabled = false; $$(".step")[2].disabled = false;
+    if(view==="bilan" && !named()){
+      $("#t-bilan").textContent = "Candidat à renseigner";
+      $("#bMeta").innerHTML = `<span><button class="btn btn-sm btn-gold" id="fillCand2" type="button">Renseigner le candidat</button></span>`;
+      $("#fillCand2").addEventListener("click", goCandidat);
+    }
+    if(view==="candidat"){
+      let n=$("#candKeep");
+      if(!n){ n=document.createElement("p"); n.id="candKeep"; n.className="warn"; n.style.margin="0"; $("#formErr").before(n); }
+      fin();
+      const c = state.evals.filter(Boolean).length + state.finEvals.filter(Boolean).length;
+      n.hidden = !c;
+      n.textContent = c ? `${c} évaluation${c>1?"s":""} déjà saisie${c>1?"s":""} : elle${c>1?"s":""} ser${c>1?"ont":"a"} rattachée${c>1?"s":""} à ce candidat. Après validation, vous revenez à l'onglet « ${SCOPES[scopeKey()].tab} ».` : "";
+    }
+  };
+  /* Validation du formulaire après coup : on garde tout et on revient à l'évaluation */
+  $("#candForm").addEventListener("submit", ()=>{
+    if(!named()) return;
+    const m = `Candidat ${state.cand.prenom} ${state.cand.nom} enregistré : l'évaluation continue.`;
+    toast(m); announce(m);
+  });
+  /* PDF impossible sans nom : on redirige vers l'identité du candidat */
+  document.addEventListener("click", e=>{
+    if(!e.target.closest || !e.target.closest("#dlPdf, #finPdf") || named()) return;
+    e.preventDefault(); e.stopPropagation();
+    const m="Renseignez le prénom et le nom du candidat pour générer son bilan PDF.";
+    toast(m); announce(m); goCandidat();
+  }, true);
+
+  move = function(d){
+    if(isFinal()){ fin(); const n=state.finCurrent+d; if(n<0||n>=NF) return; state.finCurrent=n; renderQuestion(); return; }
+    const idx=SCOPES[scopeKey()].idx, pos=idx.indexOf(state.current);
+    if(pos<0){ clampCurrent(); renderQuestion(); return; }
+    const n=pos+d; if(n<0||n>=idx.length) return;
+    state.current=idx[n]; renderQuestion();
+  };
+
+  setEval = function(k){
+    if(!isFinal()) return origSetEval(k);
+    fin(); state.finEvals[state.finCurrent]=k; saveDraft(); renderSide();
+    $("#scoreSr").textContent = `Entretien final, question ${state.finCurrent+1} : ${LEVELS[k].label}. Entretien final : ${finScore().pts} sur ${NF*10}.`;
+  };
+
+  toggleReveal = function(){
+    if(!isFinal()) return origToggle();
+    fin(); const j=state.finCurrent; state.finRevealed[j]=!state.finRevealed[j]; renderQuestion(); $("#revealBtn").focus();
+  };
+
+  renderSide = function(){
+    origSide();
+    if(typeof paintTabs==="function") paintTabs();
+    $("#sideName").textContent = (state.cand.prenom && state.cand.nom) ? `${state.cand.prenom} ${state.cand.nom.toUpperCase()}` : "Candidat à renseigner";
+    const k=scopeKey(), idx=SCOPES[k].idx;
+    $("#b1").closest(".bloc-row").classList.toggle("is-scope", k==="ccp1"||k==="ccp12");
+    $("#b2").closest(".bloc-row").classList.toggle("is-scope", k==="ccp2"||k==="ccp12");
+    let info=$("#finSideInfo");
+    if(!info){ info=document.createElement("p"); info.id="finSideInfo"; info.className="note"; $("#grid10").parentElement.appendChild(info); }
+    if(isFinal()){
+      fin();
+      $("#grid10").innerHTML = FINAL_Q.map((Q,j)=>{ const e=state.finEvals[j]; return `<button type="button" class="tile ${e||""}" data-f="${j}" ${j===state.finCurrent?'aria-current="true"':""} aria-label="Entretien final, question ${j+1}, ${e?LEVELS[e].label:"non évaluée"}">F${j+1}</button>`; }).join("");
+      $$("#grid10 .tile").forEach(t=>t.addEventListener("click",()=>{ state.finCurrent=+t.dataset.f; renderQuestion(); }));
+      const fs=finScore();
+      info.textContent = `Entretien final : ${fs.pts} / ${fs.max} pts · ${fs.done}/${NF} évaluées. Évalué à part, hors score de la grille CCP 1 + CCP 2 (/100).`;
+    } else {
+      $$("#grid10 .tile").forEach(t=>{ t.hidden = !idx.includes(+t.dataset.i); });
+      info.textContent = k==="ccp12" ? "" : `Seules les questions du ${SCOPES[k].label} sont affichées (onglet « ${SCOPES[k].tab} »).`;
+    }
+  };
+
+  function renderFinalQuestion(){
+    fin();
+    const j=state.finCurrent, Q=FINAL_Q[j], ev=state.finEvals[j], rev=state.finRevealed[j];
+    $("#qcard").innerHTML = band(`Onglet sélectionné : <b>${esc(SCOPES.final.tab)}</b> — question ${j+1} sur ${NF} de l'entretien final.`) + `
+      <div class="qhead">
+        <div class="qnum">F${j+1}<small> / ${NF}</small></div>
+        <span class="tag tag-gold">Entretien final</span>
+        <span class="tag">15 min · dossier professionnel</span>
+      </div>
+      <p class="qcomp">Compétence évaluée : <strong>${esc(Q.comp)}</strong></p>
+      <h2 class="qtext">« ${esc(Q.q)} »</h2>
+      <div class="anchor"><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true" style="flex:none;margin-top:2px"><circle cx="11" cy="11" r="9" fill="none" stroke="#d9b54a" stroke-width="1.6"/><path d="M11 6.5v5.5M11 15v.2" stroke="#f0d27a" stroke-width="2" stroke-linecap="round"/></svg><span><b>Ancrage projet</b> — ${esc(Q.anchor)}</span></div>
+      <details class="relances"><summary>Questions de relance (${Q.relances.length})</summary><ul>${Q.relances.map(r=>`<li>${esc(r)}</li>`).join("")}</ul></details>
+      <button class="btn ${rev?"":"btn-gold"} reveal" id="revealBtn" type="button" aria-expanded="${rev}" aria-controls="answerBox">
+        <span>${rev?"Masquer la réponse attendue":"Afficher la réponse attendue"}</span><span class="kbd">R</span></button>
+      <div id="answerBox" ${rev?"":"hidden"}>
+        <div class="answer">
+          <h3>Éléments de réponse attendus</h3>
+          <ul>${Q.answer.map(a=>`<li>${a}</li>`).join("")}</ul>
+          <div class="criteria">
+            <div class="crit A"><b>Acquis</b>${esc(Q.crit.A)}</div>
+            <div class="crit ECA"><b>En cours</b>${esc(Q.crit.ECA)}</div>
+            <div class="crit NA"><b>Non acquis</b>${esc(Q.crit.NA)}</div>
+          </div>
+        </div>
+      </div>
+      <fieldset class="evalbox" style="border:0;margin:24px 0 0;padding:22px 0 0;border-top:1px solid var(--line)">
+        <legend class="sr-only">Évaluation de la réponse du candidat — entretien final</legend>
+        <h3 aria-hidden="true">Évaluation de la réponse</h3>
+        <div class="levels">
+          ${Object.entries(LEVELS).map(([k,L])=>`
+            <div class="lvl ${k}">
+              <input type="radio" name="lvl" id="lvl-${k}" value="${k}" ${ev===k?"checked":""}>
+              <label for="lvl-${k}"><span class="t"><span class="box"></span>${L.label}<span class="k">${L.key.toUpperCase()}</span></span><span class="p">+ ${L.pts} point${L.pts>1?"s":""}</span></label>
+            </div>`).join("")}
+        </div>
+        <div class="field" style="margin-top:16px">
+          <label for="note">Observations du jury <span class="hint">(facultatif, reprises dans le bilan de l'entretien final)</span></label>
+          <textarea id="note" placeholder="Éléments cités, oublis, qualité de l'argumentation…">${esc(state.finNotes[j])}</textarea>
+        </div>
+      </fieldset>
+      <div class="qnav">
+        <button class="btn" id="prevQ" type="button" ${j===0?"disabled":""}>← Précédente</button>
+        ${j<NF-1?`<button class="btn btn-gold" id="nextQ" type="button">Question suivante →</button>`:`<button class="btn btn-gold" id="endQ" type="button">Terminer l'entretien final et voir le bilan</button>`}
+      </div>`;
+    $("#revealBtn").addEventListener("click", toggleReveal);
+    $$('input[name="lvl"]').forEach(r=>r.addEventListener("change",()=>setEval(r.value)));
+    $("#note").addEventListener("input", e=>{ state.finNotes[j]=e.target.value; saveDraft(); });
+    $("#prevQ").addEventListener("click",()=>move(-1));
+    const nx=$("#nextQ"); if(nx) nx.addEventListener("click",()=>move(1));
+    const en=$("#endQ"); if(en) en.addEventListener("click",()=>{ go("bilan"); setTimeout(()=>{ const s=$("#finBilan"); if(s) s.scrollIntoView({behavior:"smooth",block:"start"}); },350); });
+    renderSide();
+  }
+
+  /* ---------- Bilan : résultats de l'entretien final ---------- */
+  renderBilan = function(){ origBilan(); renderFinalBilan(); };
+  function renderFinalBilan(){
+    fin();
+    let sec=$("#finBilan");
+    if(!sec){ sec=document.createElement("section"); sec.id="finBilan"; sec.className="card fin-card"; sec.setAttribute("aria-labelledby","t-fin"); $("#view-bilan").appendChild(sec); }
+    const fs=finScore();
+    sec.hidden = !(isFinal() || fs.done>0);
+    if(sec.hidden) return;
+    sec.innerHTML = `
+      <div class="fin-head">
+        <div><div class="eyebrow">Entretien final · 15 min</div><h2 id="t-fin">Résultats de l'entretien final</h2></div>
+        <div class="fin-score">${fs.pts} / ${fs.max}<small>${fs.done}/${NF} questions évaluées</small></div>
+      </div>
+      <p class="note" style="margin:0 0 14px">Évalué à part : ces points n'entrent pas dans le score de la grille CCP 1 + CCP 2 (/100).</p>
+      <div class="fin-table">
+        <table class="res">
+          <caption class="sr-only">Résultats de l'entretien final</caption>
+          <thead><tr><th scope="col">N°</th><th scope="col">Épreuve</th><th scope="col">Compétence évaluée</th><th scope="col">Niveau</th><th scope="col" style="text-align:right">Points</th></tr></thead>
+          <tbody>${FINAL_Q.map((Q,j)=>{ const e=state.finEvals[j]; return `<tr>
+            <td class="n">F${j+1}</td><td><span class="tag">Final</span></td>
+            <td>${esc(Q.comp)}${state.finNotes[j]?`<span class="obs">« ${esc(state.finNotes[j])} »</span>`:""}</td>
+            <td>${e?`<span class="pill ${e}">${LEVELS[e].short}</span>`:`<span class="pill none">Non évaluée</span>`}</td>
+            <td class="pts">${e?LEVELS[e].pts:0} / 10</td></tr>`; }).join("")}</tbody>
+        </table>
+      </div>
+      <div class="fin-actions">
+        <button class="btn btn-gold" id="finPdf" type="button"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 2v9m0 0L5.5 7.5M9 11l3.5-3.5M3 13.5V15h12v-1.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Télécharger le bilan de l'entretien final (PDF)</button>
+        <button class="btn" id="finEdit" type="button">Modifier l'entretien final</button>
+      </div>`;
+    $("#finPdf").addEventListener("click", downloadFinalPdf);
+    $("#finEdit").addEventListener("click", ()=>switchScope("final"));
+  }
+
+  /* ---------- Historique : l'entretien final est conservé avec le candidat ---------- */
+  archive = function(){
+    origArchive();
+    const rec = history.find(h=>h.id===state.id);
+    if(rec){ fin(); rec.finEvals=[...state.finEvals]; rec.finNotes=[...state.finNotes]; store(STORE_KEY, history); }
+  };
+  renderHistory = function(){
+    origHistory();
+    $$("#histList [data-open]").forEach(b=>b.addEventListener("click",()=>{
+      const h=history.find(x=>x.id===b.dataset.open); if(!h) return;
+      state.finEvals = Array.isArray(h.finEvals) ? [...h.finEvals] : Array(NF).fill(null);
+      state.finNotes = Array.isArray(h.finNotes) ? [...h.finNotes] : Array(NF).fill("");
+      state.finRevealed = Array(NF).fill(false); state.finCurrent = 0;
+      saveDraft(); renderFinalBilan();
+    }));
+    history.forEach(h=>{
+      const fs=finScore(h); if(!fs.done) return;
+      const b=$(`#histList [data-open="${h.id}"]`); if(!b) return;
+      const small=b.closest(".hist").querySelector("small");
+      if(small) small.insertAdjacentHTML("beforeend", ` · Final : ${fs.pts} / ${fs.max}`);
+    });
+  };
+
+  /* ---------- PDF de l'entretien final ---------- */
+  function buildFinalPdf(){
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF({unit:"mm", format:"a4"});
+    const W=210, H=297, M=16;
+    const OBS=[14,14,18], GOLD=[201,162,52], GOLD2=[232,203,120], IVORY=[248,244,234], INK=[28,27,24], GREY=[104,100,90], LINE=[226,219,200];
+    const COL={A:[31,125,78], ECA:[176,124,10], NA:[184,58,44], none:[140,136,126]};
+    const BG ={A:[226,244,234], ECA:[251,240,210], NA:[249,226,222], none:[236,234,228]};
+    const T = t => pdfSafe(t), c = state.cand, fs = finScore(), genAt = new Date();
+    function head(first){
+      doc.setFillColor(...OBS); doc.rect(0,0,W, first?46:22,"F");
+      doc.setDrawColor(...GOLD); doc.setLineWidth(0.6); doc.line(M, first?46:22, W-M, first?46:22);
+      if(first){
+        doc.setFont("helvetica","bold"); doc.setFontSize(8); doc.setTextColor(...GOLD);
+        doc.setCharSpace(1.2); doc.text(T("BILAN DE L'ENTRETIEN FINAL  ·  SESSION 2026"), M, 15); doc.setCharSpace(0);
+        doc.setFont("times","bold"); doc.setFontSize(22); doc.setTextColor(...IVORY);
+        doc.text(T("Titre professionnel Médiateur numérique"), M, 28);
+        doc.setFont("helvetica","normal"); doc.setFontSize(9.5); doc.setTextColor(...GOLD2);
+        doc.text(T(`RNCP 40695  ·  Niveau 5  ·  Entretien final (15 min) - ${NF} questions  ·  Acquis 10 · En cours 5 · Non acquis 0`), M, 37);
+      } else {
+        doc.setFont("times","bold"); doc.setFontSize(13); doc.setTextColor(...IVORY);
+        doc.text(T(`Entretien final - ${c.prenom} ${c.nom.toUpperCase()}`), M, 14);
+      }
+    }
+    head(true);
+    let y=58;
+    doc.setFont("times","bold"); doc.setFontSize(20); doc.setTextColor(...INK);
+    doc.text(T(`${c.prenom} ${c.nom.toUpperCase()}`), M, y, {maxWidth:120});
+    doc.setFont("times","bold"); doc.setFontSize(24); doc.setTextColor(...GOLD);
+    doc.text(`${fs.pts} / ${fs.max}`, W-M, y, {align:"right"});
+    doc.setFont("helvetica","normal"); doc.setFontSize(8); doc.setTextColor(...GREY);
+    doc.text(T(`${fs.done}/${NF} questions évaluées`), W-M, y+6, {align:"right"});
+    y+=9;
+    [["Présentation", fmtDate(c.dt)],["Projet présenté", c.projet||"-"],["Membre du jury", c.jury||"-"],["Centre d'examen", c.centre||"-"]].forEach(([k,v])=>{
+      doc.setFont("helvetica","normal"); doc.setFontSize(8); doc.setTextColor(...GREY); doc.text(T(k), M, y);
+      doc.setFont("helvetica","bold"); doc.setFontSize(9); doc.setTextColor(...INK);
+      const t=doc.splitTextToSize(T(v), 110); doc.text(t[0]+(t.length>1?"...":""), M+32, y); y+=6;
+    });
+    y+=6;
+    const cx={n:M+2, comp:M+14, lvl:W-M-48, pts:W-M-3};
+    function thead(){
+      doc.setFillColor(...OBS); doc.rect(M, y, W-2*M, 8, "F");
+      doc.setFont("helvetica","bold"); doc.setFontSize(7.5); doc.setTextColor(...GOLD2);
+      doc.text("N°", cx.n, y+5.3); doc.text(T("COMPÉTENCE ÉVALUÉE"), cx.comp, y+5.3); doc.text("NIVEAU", cx.lvl, y+5.3); doc.text("POINTS", cx.pts, y+5.3, {align:"right"});
+      y+=8;
+    }
+    thead();
+    FINAL_Q.forEach((Q,j)=>{
+      const e=state.finEvals[j]||"none";
+      doc.setFont("helvetica","bold"); doc.setFontSize(9);
+      const compLines = doc.splitTextToSize(T(Q.comp), cx.lvl-cx.comp-6);
+      doc.setFont("helvetica","italic"); doc.setFontSize(8);
+      const note = state.finNotes[j] ? doc.splitTextToSize(T("Observation : "+state.finNotes[j]), cx.lvl-cx.comp-6) : [];
+      const h = 5 + compLines.length*4.3 + (note.length ? note.length*3.7+1.5 : 0) + 4;
+      if(y+h > H-22){ doc.addPage(); head(false); y=32; thead(); }
+      if(j%2===0){ doc.setFillColor(250,248,242); doc.rect(M,y,W-2*M,h,"F"); }
+      doc.setFont("times","bolditalic"); doc.setFontSize(13); doc.setTextColor(...GOLD); doc.text(`F${j+1}`, cx.n, y+7);
+      doc.setFont("helvetica","bold"); doc.setFontSize(9); doc.setTextColor(...INK); doc.text(compLines, cx.comp, y+5.8);
+      if(note.length){ doc.setFont("helvetica","italic"); doc.setFontSize(8); doc.setTextColor(70,66,58); doc.text(note, cx.comp, y+5.8+compLines.length*4.3+1); }
+      const lbl = e==="none" ? "Non évaluée" : LEVELS[e].label;
+      doc.setFont("helvetica","bold"); doc.setFontSize(7.5);
+      const lw = doc.getTextWidth(T(lbl))+6;
+      doc.setFillColor(...BG[e]); doc.setDrawColor(...COL[e]); doc.setLineWidth(0.3); doc.roundedRect(cx.lvl, y+2.6, lw, 5.6, 2.8, 2.8, "FD");
+      doc.setTextColor(...COL[e]); doc.text(T(lbl), cx.lvl+3, y+6.3);
+      doc.setFont("helvetica","bold"); doc.setFontSize(10); doc.setTextColor(...INK); doc.text(`${e==="none"?0:LEVELS[e].pts}/10`, cx.pts, y+6.6, {align:"right"});
+      y+=h; doc.setDrawColor(...LINE); doc.setLineWidth(0.2); doc.line(M,y,W-M,y);
+    });
+    doc.setFillColor(245,241,230); doc.rect(M,y,W-2*M,9,"F");
+    doc.setFont("helvetica","bold"); doc.setFontSize(9.5); doc.setTextColor(...INK);
+    doc.text("TOTAL ENTRETIEN FINAL", cx.comp, y+6); doc.text(`${fs.pts} / ${fs.max}`, cx.pts, y+6, {align:"right"}); y+=16;
+    if(y+34 > H-20){ doc.addPage(); head(false); y=34; }
+    const sw=(W-2*M-8)/2;
+    [["Membre du jury", c.jury||""],["Date et signature",""]].forEach(([l,v],k)=>{
+      const x=M+k*(sw+8);
+      doc.setDrawColor(...GOLD); doc.setLineWidth(0.4); doc.roundedRect(x,y,sw,28,3,3,"S");
+      doc.setFont("helvetica","bold"); doc.setFontSize(7.5); doc.setTextColor(...GOLD); doc.text(T(l.toUpperCase()), x+5, y+6.5);
+      if(v){ doc.setFont("times","bold"); doc.setFontSize(12); doc.setTextColor(...INK); doc.text(T(v), x+5, y+14); }
+    });
+    const n=doc.getNumberOfPages();
+    for(let p=1;p<=n;p++){
+      doc.setPage(p);
+      doc.setDrawColor(...LINE); doc.setLineWidth(0.3); doc.line(M, H-14, W-M, H-14);
+      doc.setFont("helvetica","normal"); doc.setFontSize(7.5); doc.setTextColor(...GREY);
+      doc.text(T(`Généré le ${genAt.toLocaleDateString("fr-FR")} à ${pad(genAt.getHours())}:${pad(genAt.getMinutes())} · Entretien final évalué hors grille CCP 1 + CCP 2 - ne se substitue pas au procès-verbal officiel.`), M, H-9);
+      doc.text(`${p} / ${n}`, W-M, H-9, {align:"right"});
+    }
+    return doc.output("blob");
+  }
+  async function downloadFinalPdf(){
+    if(!window.jspdf){ toast("Le générateur PDF n'est pas encore chargé, réessayez dans un instant."); return; }
+    archive();
+    const c=state.cand, d=(c.dt||"").replace("T","_").replace(":","h");
+    try{ await offerFile(`Bilan-Entretien-Final_Mediateur-Numerique_2026_${slug(c.nom).toUpperCase()}_${slug(c.prenom)}_${d}.pdf`, buildFinalPdf()); }
+    catch(err){ console.error(err); toast("Erreur lors de la génération du PDF."); }
+  }
+
+  /* ---------- Clic sur un onglet : redirection vers ses questions ---------- */
+  function switchScope(k){ sel.value=k; sel.dispatchEvent(new Event("change")); }
+
+  /* ---------- Barre d'onglets cliquables (un seul clic, depuis n'importe quelle page) ---------- */
+  const TAB_ORDER = ["ccp1","ccp2","ccp12","final"];
+  const TAB_MIN = {ccp12:55, ccp2:40, ccp1:15, final:15};
+  const tabsBar = document.createElement("nav");
+  tabsBar.className = "scope-tabs";
+  tabsBar.setAttribute("aria-label","Parties de l'épreuve à évaluer");
+  tabsBar.innerHTML = `<span class="st-title" aria-hidden="true">Évaluer :</span>` + TAB_ORDER.map(k=>`<button type="button" class="scope-tab" data-scope="${k}"><span class="st-l">${esc(k==="final"?"Entretien final":SCOPES[k].short)}</span><span class="st-d">${TAB_MIN[k]} min</span><span class="st-c"></span></button>`).join("");
+  document.querySelector(".topbar").appendChild(tabsBar);
+  tabsBar.addEventListener("click", e=>{ const b=e.target.closest(".scope-tab"); if(b) switchScope(b.dataset.scope); });
+  function paintTabs(){
+    const cur=scopeKey(); fin();
+    $$(".scope-tab").forEach(b=>{
+      const k=b.dataset.scope, on=k===cur;
+      const n = k==="final" ? NF : SCOPES[k].idx.length;
+      const done = k==="final" ? state.finEvals.filter(Boolean).length : SCOPES[k].idx.filter(i=>state.evals[i]).length;
+      b.classList.toggle("on", on); b.setAttribute("aria-pressed", String(on));
+      b.querySelector(".st-c").textContent = `${done}/${n}`;
+      b.setAttribute("aria-label", `${SCOPES[k].label}, ${TAB_MIN[k]} minutes, ${done} sur ${n} questions évaluées${on?", partie affichée":""}`);
+    });
+  }
+  let lastScope = scopeKey();
+
+  sel.addEventListener("change", ()=>{
+    const k=scopeKey(), S=SCOPES[k], n = k==="final" ? NF : S.idx.length;
+    const same = k===lastScope; lastScope = k;
+    updateStepLabel();
+    const what = k==="final" ? "les questions de l'entretien final" : (k==="ccp12" ? "les 10 questions des CCP 1 et 2" : `les questions du ${S.label}`);
+    let first;
+    if(k==="final"){ fin(); if(!same){ const f=state.finEvals.findIndex(e=>!e); state.finCurrent = f>=0 ? f : 0; } first = `F${state.finCurrent+1}`; }
+    else { if(!(same && S.idx.includes(state.current))){ const f=S.idx.find(i=>!state.evals[i]); state.current = f!==undefined ? f : S.idx[0]; } first = String(state.current+1); }
+    go("entretien"); paintTabs();
+    const m = `Onglet « ${S.tab} » : ${n} questions affichées (${what}), question ${first} ouverte.`;
+    toast(m); announce(m);
+  });
+
+  /* ---------- Démarrage ---------- */
+  /* Évaluation commencée sans candidat : restaurée après rechargement de la page */
+  const BACKUP_KEY = "mn-jury-2026-draft-v3";
+  const d = store(BACKUP_KEY);
+  const origSave = saveDraft;
+  saveDraft = function(){ origSave(); store(BACKUP_KEY, {...state, revealed:undefined}); };
+  if(d && !(d.cand && d.cand.prenom) && !state.cand.prenom && ((d.evals||[]).some(Boolean) || (d.finEvals||[]).some(Boolean))){
+    state = {...freshState(), ...d, revealed:Array(10).fill(false)};
+    fillForm(); go(d.view && d.view!=="candidat" ? d.view : "entretien");
+    toast("Évaluation en cours restaurée (candidat à renseigner).");
+  }
+  $$(".step")[1].disabled = false; $$(".step")[2].disabled = false;
+  updateStepLabel(); paintTabs();
+  if(!$("#view-entretien").hidden) renderQuestion();
+  if(!$("#view-bilan").hidden) renderFinalBilan();
+})();
+</script>
+</body>
+</html>
